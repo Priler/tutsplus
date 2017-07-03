@@ -1,0 +1,171 @@
+#mobile-search {
+  display: none!important;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  #top-nav li.breaker {
+    display: inline-block!important;
+  }
+
+  header#header {
+    font-size: 14px;
+    padding-bottom: 30px!important;
+
+    #main-nav li > ul.expended {
+      position: fixed;
+      left: 0;
+    }
+  }
+
+  .profile-fix {
+    margin-left: 0!important;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    z-index: 999;
+  }
+
+  .courses.layout-type-1 article {
+    width: 100%!important;
+  }
+
+  .master-head.special-1 .master-content .divided p,
+  .master-head.special-1 .master-content p {
+    font-size: 16px;
+  }
+
+  .master-head.special-1 .master-content h1 {
+    font-size: 25px!important;
+  }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+
+  header#header a#logo {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  header#header #top-nav {
+    li {
+      margin-right: 20px;
+    }
+  }
+
+  header#header {
+    height: auto;
+    padding-bottom: 20px;
+
+    .row.level-2 {
+      
+      #main-nav > ul {
+        text-align: center;
+
+        li ul {
+          text-align: left;
+        }
+      }
+
+      #top-search {
+        display: none;
+      }
+
+      #mobile-search {
+        display: block!important;
+      }
+    }
+  }
+
+  .master-head .master-image {
+    opacity: 0.3;
+  }
+
+  footer#footer header {
+    margin-bottom: 0px;
+  }
+
+  footer#footer .widget {
+    margin-top: 50px;
+  }
+
+  footer#footer #copyright #socials > p {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  footer#footer #copyright > .container > p {
+    display: block;
+    margin-right: 50%;
+  }
+
+  .author-info .author-statistics {
+    text-align: left;
+  }
+
+  .profile-fix {
+    margin-left: 50px;
+    margin-bottom: 30px;
+    z-index: 999;
+  }
+
+  .courses.layout-type-1 article {
+    width: 50%;
+  }
+
+  .master-head.special-1 .master-content h1 {
+    font-size: 35px;
+  }
+
+  #top-nav {
+    float: none!important;
+  }
+
+  header#header #top-nav li.divider {
+    margin-right: 20px;
+  }
+
+  .master-head.special-1 {
+    margin-bottom: 60px;
+  }
+
+  .master-head.special-1 .master-content .divided div:first-child {
+    border-right: none;
+  }
+
+  .heading.special-1 ul li {
+    width: 50%;
+  }
+
+  .author-page-content .block.forced {
+    margin-top: 0;
+  }
+
+  #settings {
+    margin-top: 30px;
+  }
+
+  #dialogs #list {
+    margin: 0;
+    margin-top: 30px;
+    max-height: 300px;
+    overflow: auto;
+  }
+
+  .author-page-content .block.special.no-padding:first-child {
+    margin-top: 30px;
+  }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+  .master-head p {
+    color: #516a77;
+  }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block head %}
+
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <title>{% block title %}{% endblock %} - {{app.settings.project}}</title>
+
+            <!-- Bootstrap -->
+            <link rel="stylesheet" href="/media/assets/bootstrap/css/bootstrap.min.css">
+            <link rel="stylesheet" href="/media/assets/bootstrap/css/bootstrap-theme.min.css">
+
+            <!-- Google Fonts -->
+            <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,400italic,700|Roboto:400,700' rel='stylesheet' type='text/css'>
+
+            <!-- Font Awesome -->
+            <link rel="stylesheet" href="/media/assets/font-awesome/css/font-awesome.min.css">
+
+            <!-- Custom Style -->
+            <link rel="stylesheet" href="/media/css/admin-style.css">
+
+            <!-- jQuery at head, don't ask why. -->
+            <script src="/media/assets/jquery/jquery-1.12.3.min.js"></script>
+
+        {% endblock %}
+    </head>
+    <body>
+        <div id="content">
+            <div id="admin-header">
+                <div id="logo">
+                    <img src="/media/images/logo.png" alt="">
+                </div>
+                <div class="container">
+                    <ul id="menu">
+                        <li><a href="/admin"><em class="fa fa-home"></em></a></li>
+                        <li>
+                            <a href="/admin/users"><em class="fa fa-user"></em><span>Пользователи <em class="fa fa-chevron-down"></em></span></a>
+
+                            <ul class="dropdown">
+                                <li><a href="/admin/users"><em class="fa fa-user"></em> Все</a></li>
+                                <li><a href="/admin/users/learners"><em class="fa fa-graduation-cap"></em> Ученики</a></li>
+                                <li><a href="/admin/users/mentors"><em class="fa fa-group"></em> Менторы</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="/admin/articles/list"><em class="fa fa-book"></em><span>Уроки <em class="fa fa-chevron-down"></em></span></a>
+
+                            <ul class="dropdown">
+                                <li><a href="/admin/articles/list"><em class="fa fa-list"></em> Список</a></li>
+                                <li><a href="/admin/articles/categories"><em class="fa fa-th-large"></em> Категории</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="/admin/courses/list"><em class="fa fa-newspaper-o"></em><span>Курсы <em class="fa fa-chevron-down"></em></span></a>
+
+                            <ul class="dropdown">
+                                <li><a href="/admin/courses/list"><em class="fa fa-list"></em> Список</a></li>
+                                <li><a href="/admin/courses/categories"><em class="fa fa-th-large"></em> Категории</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#"><em class="fa fa-cog"></em><span>Другое <em class="fa fa-chevron-down"></em></span></a>
+
+                            <ul class="dropdown">
+                                <li><a href="/admin/other/pages"><em class="fa fa-file-o"></em> Страницы</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="pull-right"><a href="/"><em class="fa fa-reply-all"></em> На сайт</a></li>
+                    </ul>
+                </div>
+                {% block sidebar %}{% endblock %}
+            </div>
+            <div id="admin-content">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+        <div id="footer">
+            {% block footer %}
+
+                <!-- JavaScript -->
+                <script src="/media/assets/bootstrap/js/bootstrap.min.js" defer></script>
+
+            {% endblock %}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>CodeStudio++</title>
+
+    <!-- Bootstrap styles-->
+    <link href="media/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="media/assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Core styles-->
+    <link href="media/css/style.css" rel="stylesheet">
+
+    <!-- Font Awesome-->
+    <link href="media/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <!-- includes/head.jade-->
+      <header id="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3"><a id="logo" href="#"><img src="media/images/logo.png"></a></div>
+            <div class="col-md-9">
+              <div id="top-nav" class="pull-right">
+                <ul>
+                  <li class="special-1"><a href="#" title="Войти по Email">Авторизация</a></li>
+                  <li class="divider">или</li>
+                  <li>
+                    <div class="social-links"><a href="#" title="Войти через Вконтакте" class="vk"><em class="fa fa-vk"></em></a><a href="#" title="Войти через Фейсбук" class="facebook"><em class="fa fa-facebook"></em></a><a href="#" title="Войти через Твиттер" class="twitter"><em class="fa fa-twitter"></em></a></div>
+                  </li>
+                  <li class="special-2"><a href="#" title="Регистрация по Email"><em class="fa fa-key"></em><span>Регистрация</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row level-2">
+            <div class="col-md-9">
+              <div id="main-nav">
+                <ul>
+                  <li><a href="#">Уроки<em class="fa fa-chevron-down"></em></a>
+                    <ul class="expended">
+                      <li class="hover"><a href="#">Дизайн<em class="fa fa-chevron-right"></em></a>
+                        <div class="topics">
+                          <ul>
+                            <li><a href="#">Векторы</a></li>
+                            <li><a href="#">Adobe Photoshop</a></li>
+                            <li><a href="#">Adobe Illustrator</a></li>
+                            <li><a href="#">Иллюстрации</a></li>
+                            <li><a href="#">Советы</a></li>
+                            <li><a href="#">Вдохновление</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Рисование</a></li>
+                            <li><a href="#">Эффекты Текста</a></li>
+                            <li><a href="#">Материал</a></li>
+                          </ul><a href="#">Смотреть все уроки ...</a>
+                        </div>
+                      </li>
+                      <li><a href="#">Кодинг<em class="fa fa-chevron-right"></em></a>
+                        <div class="topics teal">
+                          <ul>
+                            <li><a href="#">Веб Разработка</a></li>
+                            <li><a href="#">WordPress</a></li>
+                            <li><a href="#">Моб. Приложения</a></li>
+                            <li><a href="#">PHP</a></li>
+                            <li><a href="#">Flash</a></li>
+                            <li><a href="#">Java Script</a></li>
+                            <li><a href="#">CMS</a></li>
+                            <li><a href="#">iOS SDK</a></li>
+                            <li><a href="#">Android SDK</a></li>
+                            <li><a href="#">Новости</a></li>
+                          </ul><a href="#">Смотреть все уроки ...</a>
+                        </div>
+                      </li>
+                      <li><a href="#">Веб Дизайн<em class="fa fa-chevron-right"></em></a>
+                        <div class="topics teal-green">
+                          <ul>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">HTML & CSS</a></li>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">Adobe Photoshop</a></li>
+                            <li><a href="#">Готовые Вебсайты</a></li>
+                            <li><a href="#">UI Дизайн</a></li>
+                            <li><a href="#">Советы</a></li>
+                            <li><a href="#">Теория Дизайна</a></li>
+                            <li><a href="#">Общее</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                          </ul><a href="#">Смотреть все уроки ...</a>
+                        </div>
+                      </li>
+                      <li><a href="#">Фото и Видео<em class="fa fa-chevron-right"></em></a>
+                        <div class="topics purple">
+                          <ul>
+                            <li><a href="#">Съемка</a></li>
+                            <li><a href="#">Обработка</a></li>
+                            <li><a href="#">Обзоры</a></li>
+                            <li><a href="#">Adobe Photoshop</a></li>
+                            <li><a href="#">Как сделать</a></li>
+                            <li><a href="#">Свет</a></li>
+                            <li><a href="#">Вдохновление</a></li>
+                            <li><a href="#">Adobe Lightroom</a></li>
+                            <li><a href="#">Фотография</a></li>
+                            <li><a href="#">Видео</a></li>
+                          </ul><a href="#">Смотреть все уроки ...</a>
+                        </div>
+                      </li>
+                      <li><a href="#">Музыка и Аудио<em class="fa fa-chevron-right"></em></a>
+                        <div class="topics sea">
+                          <ul>
+                            <li><a href="#">Запись</a></li>
+                            <li><a href="#">Общее</a></li>
+                            <li><a href="#">Logic Pro</a></li>
+                            <li><a href="#">Советы</a></li>
+                            <li><a href="#">Мастеринг</a></li>
+                            <li><a href="#">Open Mic</a></li>
+                            <li><a href="#">Дизайн Звука</a></li>
+                            <li><a href="#">Ableton Live</a></li>
+                            <li><a href="#">Обзоры</a></li>
+                            <li><a href="#">Новости</a></li>
+                          </ul><a href="#">Смотреть все уроки ...</a>
+                        </div>
+                      </li>
+                      <li><a href="#">3D и Моушн Дизайн<em class="fa fa-chevron-right"></em></a>
+                        <div class="topics tomato">
+                          <ul>
+                            <li><a href="#">Adobe After Effects</a></li>
+                            <li><a href="#">3D</a></li>
+                            <li><a href="#">Моушн Дизайн</a></li>
+                            <li><a href="#">3D Studio Max</a></li>
+                            <li><a href="#">Maya</a></li>
+                            <li><a href="#">Cinema 4D</a></li>
+                            <li><a href="#">Советы</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Эффекты</a></li>
+                            <li><a href="#">Футажи</a></li>
+                          </ul><a href="#">Смотреть все уроки ...</a>
+                        </div>
+                      </li>
+                      <li><a href="#">Разработка Игр<em class="fa fa-chevron-right"></em></a>
+                        <div class="topics green">
+                          <ul>
+                            <li><a href="#">Гейм Дизайн</a></li>
+                            <li><a href="#">Кодинг</a></li>
+                            <li><a href="#">Платформы</a></li>
+                            <li><a href="#">Маркетинг</a></li>
+                            <li><a href="#">Flash</a></li>
+                            <li><a href="#">С нуля</a></li>
+                            <li><a href="#">HTML 5</a></li>
+                            <li><a href="#">Construct 2</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Советы</a></li>
+                          </ul><a href="#">Смотреть все уроки ...</a>
+                        </div>
+                      </li>
+                      <li><a href="#">Компьютер<em class="fa fa-chevron-right"></em></a>
+                        <div class="topics blue">
+                          <ul>
+                            <li><a href="#">OS X</a></li>
+                            <li><a href="#">Тренинги</a></li>
+                            <li><a href="#">Продуктивность</a></li>
+                            <li><a href="#">Советы</a></li>
+                            <li><a href="#">Электроника</a></li>
+                            <li><a href="#">Автоматизация</a></li>
+                            <li><a href="#">Защита</a></li>
+                            <li><a href="#">Офис</a></li>
+                            <li><a href="#">Железо</a></li>
+                            <li><a href="#">Mac</a></li>
+                          </ul><a href="#">Смотреть все уроки ...</a>
+                        </div>
+                      </li>
+                      <li><a href="#">Бизнес<em class="fa fa-chevron-right"></em></a>
+                        <div class="topics orange">
+                          <ul>
+                            <li><a href="#">Фриланс</a></li>
+                            <li><a href="#">Маркетинг</a></li>
+                            <li><a href="#">Планирование</a></li>
+                            <li><a href="#">Финансы</a></li>
+                            <li><a href="#">Коммуникация</a></li>
+                            <li><a href="#">Продажи</a></li>
+                            <li><a href="#">SEO</a></li>
+                            <li><a href="#">Карьерный Рост</a></li>
+                            <li><a href="#">Продуктивность</a></li>
+                            <li><a href="#">Советы</a></li>
+                          </ul><a href="#">Смотреть все уроки ...</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Курсы<em class="fa fa-chevron-down"></em></a>
+                    <ul>
+                      <li><a href="#">Дизайн</a></li>
+                      <li><a href="#">Кодинг</a></li>
+                      <li><a href="#">Веб дизайн</a></li>
+                      <li><a href="#">Фото и Видео</a></li>
+                      <li><a href="#">Музыка и Аудио</a></li>
+                      <li><a href="#">3D & Моушн Графика</a></li>
+                      <li><a href="#">Разработка игр</a></li>
+                      <li><a href="#">Компьютер</a></li>
+                      <li><a href="#">Бизнес</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Вебинары</a></li>
+                  <li><a id="mobile-search" href="#"><em class="fa fa-search"></em></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div id="top-search" class="pull-right">
+                <form action="#" method="GET">
+                  <button type="submit"><em class="fa fa-search"></em></button>
+                  <input type="text" name="s" placeholder="Поиск ...">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="content" class="full-width author-page">
+        <div class="author-info">
+          <div class="background"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4"></div>
+              <div class="col-md-8">
+                <div class="row author-statistics">
+                  <div class="col-sm-6">
+                    <h3>Кошелёк</h3><strong class="counter lime-text"><span>2 500</span><em class="fa fa-ruble"></em></strong>
+                  </div>
+                  <div class="col-sm-3">
+                    <h3>Сообщения</h3><strong class="counter"><a href="#" class="white-text messages-counter"><span>53</span><em class="fa fa-envelope-o"></em></a></strong>
+                  </div>
+                  <div class="col-sm-3">
+                    <h3>Подписчики</h3><strong class="counter"><em class="fa fa-youtube-play"></em><span>212,109 </span></strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="author-tabbed-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4"></div>
+              <div class="col-md-8">
+                <ul>
+                  <li><a href="#"><em class="fa fa-bullhorn"></em><span>Лента (100+)</span></a></li>
+                  <li><a href="#"><em class="fa fa-newspaper-o"></em><span>Стена</span></a></li>
+                  <li class="active"><a href="#"><em class="fa fa-comments-o"></em><span>Диалоги (+3)</span></a></li>
+                  <li><a href="#"><em class="fa fa-usd"></em><span>Товары/Услуги (29)</span></a></li>
+                  <li><a href="#"><em class="fa fa-cog"></em><span>Настройки</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="author-page-content">
+          <div class="container">
+            <div class="col-md-4">
+              <div class="block author-bio forced">
+                <div class="block-title"><img src="media/images/design-time/icons/pencil.svg"><span title="Профессия">Веб Дизайнер</span>
+                  <div title="Рейтинг" class="rating">
+                    <div class="stars"><em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em></div>
+                  </div>
+                </div>
+                <div class="block-content">
+                  <div class="row">
+                    <div class="col-sm-4"><img src="media/images/demo/authors/0.jpg"></div>
+                    <div class="col-sm-8"><strong class="name">Abraham Tugalov 
+                        <div class="offline">Offline</div></strong>
+                      <ul class="info">
+                        <li><strong>Возраст:</strong><span>20</span></li>
+                        <li><strong>Статус:</strong><span>Джедай</span></li>
+                        <li><strong>Спасибо:</strong><span>13 937</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="block-footer">
+                    <div class="row">
+                      <div class="col-md-6"><a href="#" class="btn subscribe-btn"><em class="fa fa-youtube-play"></em><span>Подписаться</span></a></div>
+                      <div class="col-md-6">
+                        <p>Новые материалы автора у Вас в ленте!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block special no-padding">
+                <div class="block-content"><a href="#" class="btn blocky"><em class="fa fa-video-camera"></em><span>Организовать вебинар</span><em class="fa fa-plus pull-right"></em></a></div>
+              </div>
+              <div class="block special no-padding">
+                <div class="block-content"><a href="#" class="btn blocky"><em class="fa fa-play"></em><span>Опубликовать курс</span><em class="fa fa-plus pull-right"></em></a></div>
+              </div>
+              <div class="block special no-padding">
+                <div class="block-content"><a href="#" class="btn blocky"><em class="fa fa-sticky-note-o"></em><span>Добавить урок</span><em class="fa fa-plus pull-right"></em></a></div>
+              </div>
+              <div class="block special no-padding">
+                <div class="block-content"><a href="#" class="btn blocky"><em class="fa fa-book"></em><span>Загрузить книгу</span><em class="fa fa-plus pull-right"></em></a></div>
+              </div>
+              <div class="block special no-padding">
+                <div class="block-content"><a href="#" class="btn blocky"><em class="fa fa-flask"></em><span>Мои достижения (27)</span><em class="fa fa-chevron-right pull-right"></em></a></div>
+              </div>
+              <div class="block special no-padding">
+                <div class="block-content"><a href="#" class="btn blocky"><em class="fa fa-group"></em><span>Мои друзья/партнёры (137)</span><em class="fa fa-chevron-right pull-right"></em></a></div>
+              </div>
+              <div class="block special no-padding">
+                <div class="block-content"><a href="#" class="btn blocky"><em class="fa fa-commenting-o"></em><span>Отзывы обо мне (78)</span><em class="fa fa-chevron-right pull-right"></em></a></div>
+              </div>
+            </div>
+            <div id="dialogs" class="col-md-8">
+              <div class="row">
+                <div class="col-md-5">
+                  <div id="list">
+                    <div class="item">
+                      <div class="poster"><img src="media/images/demo/authors/0.jpg"></div>
+                      <div class="info">
+                        <div class="name">Абрахам Тугалов</div>
+                        <div class="last-message">Привет!</div>
+                      </div>
+                      <div class="meta">
+                        <div class="time">10:33</div>
+                        <div class="new-messages">3</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="poster"><img src="media/images/demo/authors/1.jpg"></div>
+                      <div class="info">
+                        <div class="name">Александр Соул</div>
+                        <div class="last-message">Ты сделал домашку, ил...</div>
+                      </div>
+                      <div class="meta">
+                        <div class="time">11:00</div>
+                        <div class="new-messages">2</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="poster"><img src="media/images/demo/authors/2.jpg"></div>
+                      <div class="info">
+                        <div class="name">Трутень "TNT" Башнев</div>
+                        <div class="last-message">Да, я занимаюсь эт...</div>
+                      </div>
+                      <div class="meta">
+                        <div class="time">12:58</div>
+                        <div class="new-messages">11</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div id="chat">
+                    <div class="dialog-not-selected"><span>Пожалуйста, выберите диалог.</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- includes/footer.jade-->
+      <footer id="footer">
+        <div class="container">
+          <header>
+            <div id="statistics">
+              <div><strong>21,642</strong><span>Tutorials</span></div>
+              <div><strong>784</strong><span>Video Courses</span></div>
+            </div>
+            <div id="footer-logo"><img src="media/images/logo.png">
+              <p>Teaching skills to millions worldwide.</p>
+            </div>
+          </header>
+          <div id="widgets">
+            <div class="row">
+              <div class="col-md-3 col-xs-12">
+                <div class="widget">
+                  <div class="widget-title">Meet Envato</div>
+                  <div class="widget-content links-list"><a href="#">About Envato</a><a href="#">About Envato</a><a href="#">About Envato</a></div>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-12">
+                <div class="widget">
+                  <div class="widget-title">Join our Community</div>
+                  <div class="widget-content links-list"><a href="#">About Envato</a><a href="#">About Envato</a><a href="#">About Envato</a></div>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-12">
+                <div class="widget">
+                  <div class="widget-title">Help and Support</div>
+                  <div class="widget-content links-list"><a href="#">About Envato</a><a href="#">About Envato</a><a href="#">About Envato</a></div>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-12">
+                <div class="widget">
+                  <div class="widget-title">Email Newsletters</div>
+                  <div class="widget-content">
+                    <p>Get Envato CodeStudio++ updates, news, surveys & offers.</p>
+                    <form action="#" method="POST" class="mailchimp-form">
+                      <input type="text" placeholder="Email Address">
+                      <button type="submit">Subscribe</button><a href="#">Privacy Policy</a>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="copyright">
+          <div class="container">
+            <div id="socials">
+              <p>Follow Envato CodeStudio++</p>
+              <div class="social-links"><a href="#" class="facebook"><em class="fa fa-facebook"></em></a><a href="#" class="twitter"><em class="fa fa-twitter"></em></a><a href="#" class="google"><em class="fa fa-google-plus"></em></a><a href="#" class="pinterest"><em class="fa fa-pinterest"></em></a></div>
+            </div>
+            <p>© 2016 Envato Pty Ltd. Trademarks and brands are the property of their respective owners.</p>
+          </div>
+        </div>
+      </footer>
+      <div id="overlay"></div>
+      <div id="search-overlay"></div>
+      <div id="mobile-search-modal">
+        <div class="absolute-center">
+          <div id="form-holder">
+            <form action="#" method="POST">
+              <input type="text" placeholder="Поиск ..." name="s">
+              <button type="submit"><em class="fa fa-search"></em></button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Java Script, deffered-->
+      <script src="media/assets/jquery/jquery-1.12.3.min.js" defer></script>
+      <script src="media/assets/bootstrap/js/bootstrap.min.js" defer></script>
+      <script src="media/assets/velocity/velocity.min.js" defer></script>
+      <script src="media/assets/form-styler/jquery.formstyler.min.js" defer></script>
+      <script src="media/js/core.js" defer></script>
+    </div>
+  </body>
+</html>

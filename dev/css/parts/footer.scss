@@ -1,0 +1,135 @@
+footer#footer {
+
+  background-color: #212A34;
+  color: #fff;
+  padding-top: 20px;
+
+  header {
+    border-bottom: solid 1px #17232c;
+    margin-bottom: 40px;
+    height: 55px;
+    padding-top: 5px;
+
+    #footer-logo > * {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    #footer-logo p {
+      color: #8e8e8e;
+      font-size: 12px;
+      margin-left: 20px;
+    }
+
+    #footer-logo img {
+      width: 144px;
+      height: 18px;
+    }
+
+    #statistics {
+      float: right;
+
+      & > div {
+        display: inline-block;
+        font-size: 14px;
+        color: #8e8e8e;
+        margin-right: 24px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        strong {
+          color: #fff;
+          font-weight: bold;
+          margin-right: 6px;
+        }
+      }
+    }
+
+  }
+
+  #widgets {
+    font-size: 15px;
+
+    .widget-title {
+      color: #999999;
+      line-height: 1.3em;
+      margin-bottom: 15px;
+    }
+
+    .widget-content {
+      &.links-list {
+        a {
+          display: block;
+          color: #fff;
+          white-space: nowrap;
+          margin-bottom: 3px;
+        }
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+    }
+
+  }
+
+  .mailchimp-form {
+    input {
+      border: none;
+      background: white;
+      color: #3a3a3a;
+      font: inherit;
+      padding: 7px 15px;
+      border-radius: 4px;
+      width: 100%;
+      margin-bottom: 6px;
+      outline: none;
+    }
+    button {
+      display: inline-block;
+      text-align: center;
+      border: none;
+      background: #83b348;
+      color: white;
+      border-radius: 4px;
+      width: 100%;
+      padding: 11px 0 10px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    & > a {
+      color: #fff;
+      font-size: 13px;
+    }
+  }
+
+  #copyright {
+    background-color: #19212A;
+    margin-top: 40px;
+    padding: 40px 0;
+    color: #999999;
+    font-size: 12px;
+
+    & > .container > p {
+      margin-top: 9px;
+    }
+
+    #socials {
+      float: right;
+
+      & > p {
+        margin-right: 20px;
+      }
+
+      & > * {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}404 страница не найдена{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+<div id="content">
+  <div class="container">
+    <h1>404 запрошенная страница не существует.</h1>
+    <h3>Возможна, она была удалена или никогда не существовала.</h3>
+    <hr>
+    <a href="/">Вернуться на главную страницу</a>
+  </div>
+</div>
+{% endblock %}

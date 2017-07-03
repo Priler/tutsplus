@@ -1,0 +1,12 @@
+#Don't touch this
+RewriteEngine On
+
+#Rewrite rules
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-l  
+
+RewriteRule ^(.+)$ index.php
+
+#Charset configuration
+AddDefaultCharset utf-8

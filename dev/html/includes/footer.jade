@@ -1,0 +1,83 @@
+// includes/footer.jade
+footer#footer
+    .container
+        header
+            #statistics
+                div
+                    strong 21,642
+                    span Tutorials
+                div
+                    strong 784
+                    span Video Courses
+            #footer-logo
+                img(src='/media/images/logo.svg')
+                p Teaching skills to millions worldwide.
+
+        #widgets
+            div.row
+                div.col-md-3.col-xs-12
+                    div.widget
+                        div.widget-title Meet Envato
+                        div.widget-content.links-list
+                            a(href='#') About Envato
+                            a(href='#') About Envato
+                            a(href='#') About Envato
+
+                div.col-md-3.col-xs-12
+                    div.widget
+                        div.widget-title Join our Community
+                        div.widget-content.links-list
+                            a(href='#') About Envato
+                            a(href='#') About Envato
+                            a(href='#') About Envato
+
+                div.col-md-3.col-xs-12
+                    div.widget
+                        div.widget-title Help and Support
+                        div.widget-content.links-list
+                            a(href='#') About Envato
+                            a(href='#') About Envato
+                            a(href='#') About Envato
+
+                div.col-md-3.col-xs-12
+                    div.widget
+                        div.widget-title Email Newsletters
+                        div.widget-content
+                            p Get Envato Tuts+ updates, news, surveys & offers.
+                            form.mailchimp-form(action='#', method='POST')
+                                input(type='text', placeholder='Email Address')
+                                button(type='submit') Subscribe
+                                a(href='#') Privacy Policy
+
+    #copyright
+        .container
+            #socials
+                p Follow Envato Tuts+
+                .social-links
+                    a.facebook(href='#')
+                        em.fa.fa-facebook
+                    a.twitter(href='#')
+                        em.fa.fa-twitter
+                    a.google(href='#')
+                        em.fa.fa-google-plus
+                    a.pinterest(href='#')
+                        em.fa.fa-pinterest
+            p © 2016 Envato Pty Ltd. Trademarks and brands are the property of their respective owners.
+
+#overlay
+#search-overlay
+#mobile-search-modal
+    div.absolute-center
+        #form-holder
+            form(action='#', method='POST')
+                input(type='text', placeholder='Поиск ...', name='s')
+                button(type='submit')
+                    em.fa.fa-search
+
+= '\n'
+// Java Script, deffered
+script(src='/media/assets/jquery/jquery-1.12.3.min.js', defer)
+script(src='/media/assets/bootstrap/js/bootstrap.min.js', defer)
+script(src='/media/assets/velocity/velocity.min.js', defer)
+script(src='/media/assets/form-styler/jquery.formstyler.min.js', defer)
+script(src='/media/js/core.js', defer)

@@ -1,0 +1,217 @@
+/**
+ * Links.
+ */
+
+a.chevroned::after {
+  margin-left: 5px;
+  content: "\2192";
+}
+
+/**
+ * Colors.
+ */
+.lime-text {
+  color: #7AAC41;
+}
+
+.white-text {
+  color: #ffffff;
+}
+
+.messages-counter:hover {
+  color: #eee;
+}
+
+/**
+ * Buttons.
+ */
+
+.btn {
+  color: white;
+  display: inline-block;
+  border-radius: 5px;
+  border: 0;
+  padding: 10px 16px;
+  font-size: 16px;
+
+  &.subscribe-btn {
+    background-color: #dddddd;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #212A34;
+    position: relative;
+    padding-left: 50px;
+    margin-top: 15px;
+
+    &:hover {
+      background-color: red;
+      color: white;
+    }
+
+    em.fa {
+      background-color: red;
+      margin-right: 10px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 40px;
+      line-height: 33px;
+      color: white;
+      font-size: 18px;
+      text-align: center;
+      border-radius: 3px 0 0 3px;
+      border-right: 1px solid #ddd;
+    }
+  }
+
+  &.signup-btn {
+    background-color: #1D9A4F;
+    font-size: 13px;
+    padding: 9px 12px;
+    font-weight: bold;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &.btn-save {
+    background-color: #72BF40;
+    font-size: 13px;
+    padding: 9px 12px;
+    font-weight: bold;
+
+    em.fa {
+      margin-right: 7px;
+    }
+
+    &:hover {
+      color: white;
+      opacity: 0.9;
+    }
+  }
+
+  &.learner-btn {
+    background: rgb(219,155,10);
+    background: -moz-linear-gradient(top,  rgba(219,155,10,1) 0%, rgba(206,99,0,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(219,155,10,1) 0%,rgba(206,99,0,1) 100%);
+    background: linear-gradient(to bottom,  rgba(219,155,10,1) 0%,rgba(206,99,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db9b0a', endColorstr='#ce6300',GradientType=0 );
+    font-size: 25px;
+    padding: 10px 50px;
+    font-weight: 400;
+    border-radius: 2px;
+    border-bottom: 1px solid #af5200;
+
+    &:hover {
+      background: rgb(219,155,10);
+      color: #ffffff;
+    }
+  }
+
+  &.mentor-btn {
+    background: rgb(94,188,54);
+    background: -moz-linear-gradient(top,  rgba(94,188,54,1) 0%, rgba(65,130,32,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(94,188,54,1) 0%,rgba(65,130,32,1) 100%);
+    background: linear-gradient(to bottom,  rgba(94,188,54,1) 0%,rgba(65,130,32,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ebc36', endColorstr='#418220',GradientType=0 );
+    font-size: 25px;
+    padding: 10px 50px;
+    font-weight: 400;
+    border-radius: 2px;
+    border-bottom: 1px solid #326617;
+
+    &:hover {
+      background: rgb(94,188,54);
+      color: #ffffff;
+    }
+  }
+
+  &.btn-primary {
+    box-shadow: 0 1px 1px rgba(11,56,29,0.7);
+    background-image: -webkit-linear-gradient(270deg, #136fd2, #0f56a3);
+    background-image: linear-gradient(180deg, #136fd2, #0f56a3);
+  }
+}
+
+/**
+ * Forms.
+ */
+.form-group {
+  label {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  input {
+    border: 1px solid #c1d0d9;
+    border-radius: 6px;
+    box-shadow: inset 0px 1px 2px rgba(102,102,102,0.1);
+    background-color: #fefefe;
+    padding: 18px 10px;
+  }
+}
+
+/**
+ * Social buttons.
+ */
+
+.social-links {
+  display: inline-block;
+}
+
+.social-links > a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  color: #fff;
+  line-height: 36px;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 20px;
+  border-radius: 4px;
+
+  &.facebook {
+    background-color: #39589D;
+  }
+
+  &.twitter {
+    background-color: #2094F2;
+  }
+
+  &.google {
+    background-color: #DC4E41;
+  }
+
+  &.pinterest {
+    background-color: #CD1D22;
+  }
+
+  &.vkontakte {
+    background-color: #486A8E;
+  }
+}
+
+#settings-tabs {
+  font-family: "Open Sans", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  margin-left: -10px;
+
+  li.active a {
+    border-left: 3px solid #6285AF;
+    background-color: #F5F7FA;
+    color: black;
+    font-weight: 600;
+  }
+
+  li a {
+    display: block;
+    padding: 7px 15px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #F5F7FA;
+    }
+  }
+
+}

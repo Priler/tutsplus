@@ -1,0 +1,86 @@
+doctype html
+html(lang="ru")
+
+  head
+    title="Tuts+"
+    = '\n'
+    // Bootstrap styles
+    link(href='/media/assets/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    link(href='/media/assets/bootstrap/css/bootstrap-theme.min.css', rel='stylesheet')
+    = '\n'
+    // Core styles
+    link(href='/media/css/style.css', rel='stylesheet')
+    = '\n'
+    // Font Awesome
+    link(href='/media/assets/font-awesome/css/font-awesome.min.css', rel='stylesheet')
+    = '\n'
+    // Form Styler
+    link(href='/media/assets/form-styler/jquery.formstyler.css', rel='stylesheet')
+
+  body
+
+    #page-wrapper
+
+        include ./includes/head.jade
+
+        #content.full-width.sign-up-page
+            .container
+                .row
+                    .col-md-7
+                        img(src='/media/images/design-time/signup.png')
+                    .col-md-5
+                        .signup-form
+                            .heading
+                                h1
+                                    em.fa.fa-user
+                                    span Регистрация
+
+                            form(action='#', method='POST')
+                                .list
+                                    h1 Я
+                                    label.client
+                                        input(type='radio', name='account_type', value='learner', checked)
+                                        em.fa.fa-circle-o
+                                        em.fa.fa-dot-circle-o
+                                        span Ученик
+
+                                    label.orderer
+                                        input(type='radio', name='account_type', value='mentor')
+                                        em.fa.fa-circle-o
+                                        em.fa.fa-dot-circle-o
+                                        span Ментор
+
+                                    div.about
+                                        .mentor
+                                            Стань ментором, обучай навыкам, рассказывай про технологии, проводи вебинары, пиши уроки. Стань примером для всех!
+
+                                        .learner
+                                            Стань учеником, изучай новые технологии, общайся с менторами в онлайн чате, посещай вебинары. Стань экспертом в своей области!
+
+                                p.info Уже есть аккаунт? 
+                                    a(href='#') Войти.
+
+                                .form-group
+                                    label Ваш Email
+                                    input(type='email', placeholder='you@example.com')
+                                .form-group
+                                    label Придумайте пароль
+                                    input(type='password')
+                                .form-group.submit
+                                    button.btn.signup-btn(type='submit') Создать аккаунт и Войти →
+                                    small Нажимая на кнопку «Зарегистрироваться», я соглашаюсь с 
+                                        a(href='#') правилами сайта.
+
+                            .social-logins
+                                p Быстрая регистрация!
+                                a(href='#').btn.via-vk
+                                    em.fa.fa-vk
+                                    span Vkontakte
+                                a(href='#').btn.via-fb
+                                    em.fa.fa-facebook
+                                    span Facebook
+                                a(href='#').btn.via-tw
+                                    em.fa.fa-twitter
+                                    span Twitter
+
+        include ./includes/footer.jade

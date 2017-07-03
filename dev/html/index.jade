@@ -1,0 +1,422 @@
+doctype html
+html(lang="ru")
+
+  head
+    title="Tuts+"
+    = '\n'
+    // Bootstrap styles
+    link(href='/media/assets/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    link(href='/media/assets/bootstrap/css/bootstrap-theme.min.css', rel='stylesheet')
+    = '\n'
+    // Core styles
+    link(href='/media/css/style.css', rel='stylesheet')
+    = '\n'
+    // Font Awesome
+    link(href='/media/assets/font-awesome/css/font-awesome.min.css', rel='stylesheet')
+    = '\n'
+    // Form Styler
+    link(href='/media/assets/form-styler/jquery.formstyler.css', rel='stylesheet')
+
+  body
+
+    #page-wrapper
+
+        include ./includes/head.jade
+
+        #content.full-width
+            div.master-head.special-1
+                .block-overlay
+                .container
+                    .master-content
+                        h1 Если хочешь учиться или обучаться, тебе к нам!
+                        p У нас представлены тысячи уроков, курсов и вебинаров, что-бы ты смог научиться чему хочешь!
+                        .row.divided
+                            .col-sm-6
+                                a(href='#', class="btn learner-btn") Хочу учиться
+                                p Стань учеником, изучай новые технологии, общайся с менторами в онлайн чате, посещай вебинары.
+                                    br
+                                    | Стань экспертом в своей области!
+                            .col-sm-6
+                                a(href='#', class="btn mentor-btn") Хочу обучать
+                                p Стань ментором, обучай навыкам, рассказывай про технологии, проводи вебинары, пиши уроки.
+                                    br
+                                    | Стань примером для всех!
+
+            .container
+                div.heading.centered.special-1
+                    .center
+                        h2
+                            em.fa.fa-globe
+                            span Сферы деятельности
+                    ul
+                        li
+                            a(href='#') Разработка сайтов
+                        li
+                            a(href='#') Тексты
+                        li
+                            a(href='#') Дизайн и Арт
+                        li
+                            a(href='#') Программирование
+                        li
+                            a(href='#') Аутсорсинг и консалтинг
+                        li
+                            a(href='#') Переводы
+                        li
+                            a(href='#') Разработка игр
+                        li
+                            a(href='#') Аудио и Видео
+                        li
+                            a(href='#') 3D Графика
+                        li
+                            a(href='#') Инжиниринг
+                        li
+                            a(href='#') Фотография
+                        li
+                            a(href='#') Анимация и флеш
+                        li
+                            a(href='#') Реклама и Маркетинг
+                        li
+                            a(href='#') Обучение и консультация
+                        li
+                            a(href='#') Архитектура/Интерьер
+                        li
+                            a(href='#') Полиграфия
+                        li
+                            a(href='#') Менеджмент
+                        li
+                            a(href='#') Оптимизация (SEO)
+                        li
+                            a(href='#') Мобильные приложения
+                        li
+                            a(href='#') Сети и инфосистемы
+
+            .container
+                div.heading.single
+                    h2
+                        em.fa.fa-youtube-play
+                        span Популярные курсы
+                    div.center
+                        p Их смотрят больше всего!
+
+                div.courses.layout-type-1.row
+                    article
+                        div
+                            a(href='#')
+                                img(src='/media/images/demo/1.png')
+                                em.fa.sticky.fa-play-circle-o
+                            a(href='#') JavaScript ES6 Fundamentals
+                            p Dan Wellman, Front-End Web Developer
+
+                    article
+                        div
+                            a(href='#')
+                                img(src='/media/images/demo/2.jpg')
+                                em.fa.sticky.fa-play-circle-o
+                            a(href='#') Building WordPress Themes With Bootstrap
+                            p Dan Wellman, Front-End Web Developer
+
+                    article
+                        div
+                            a(href='#')
+                                img(src='/media/images/demo/3.jpg')
+                                em.fa.sticky.fa-play-circle-o
+                            a(href='#') Mastering Script Lettering
+                            p Dan Wellman, Front-End Web Developer
+
+                    article
+                        div
+                            a(href='#')
+                                img(src='/media/images/demo/1.png')
+                                em.fa.sticky.fa-play-circle-o
+                            a(href='#') JavaScript ES6 Fundamentals
+                            p Dan Wellman, Front-End Web Developer
+
+                    article
+                        div
+                            a(href='#')
+                                img(src='/media/images/demo/2.jpg')
+                                em.fa.sticky.fa-play-circle-o
+                            a(href='#') Building WordPress Themes With Bootstrap
+                            p Dan Wellman, Front-End Web Developer
+
+                    article
+                        div
+                            a(href='#')
+                                img(src='/media/images/demo/3.jpg')
+                                em.fa.sticky.fa-play-circle-o
+                            a(href='#') Mastering Script Lettering
+                            p Dan Wellman, Front-End Web Developer
+
+            .container
+                div.heading.single
+                    h2
+                        em.fa.fa-youtube-play
+                        span Новейшие курсы
+                    div.center
+                        p На волне тренда!
+
+                div.courses.layout-type-1.row
+                    article
+                        div
+                            a(href='#')
+                                img(src='/media/images/demo/1.png')
+                                em.fa.sticky.fa-play-circle-o
+                            a(href='#') JavaScript ES6 Fundamentals
+                            p Dan Wellman, Front-End Web Developer
+
+                    article
+                        div
+                            a(href='#')
+                                img(src='/media/images/demo/2.jpg')
+                                em.fa.sticky.fa-play-circle-o
+                            a(href='#') Building WordPress Themes With Bootstrap
+                            p Dan Wellman, Front-End Web Developer
+
+                    article
+                        div
+                            a(href='#')
+                                img(src='/media/images/demo/3.jpg')
+                                em.fa.sticky.fa-play-circle-o
+                            a(href='#') Mastering Script Lettering
+                            p Dan Wellman, Front-End Web Developer
+
+                    article
+                        div
+                            a(href='#')
+                                img(src='/media/images/demo/1.png')
+                                em.fa.sticky.fa-play-circle-o
+                            a(href='#') JavaScript ES6 Fundamentals
+                            p Dan Wellman, Front-End Web Developer
+
+                    article
+                        div
+                            a(href='#')
+                                img(src='/media/images/demo/2.jpg')
+                                em.fa.sticky.fa-play-circle-o
+                            a(href='#') Building WordPress Themes With Bootstrap
+                            p Dan Wellman, Front-End Web Developer
+
+                    article
+                        div
+                            a(href='#')
+                                img(src='/media/images/demo/3.jpg')
+                                em.fa.sticky.fa-play-circle-o
+                            a(href='#') Mastering Script Lettering
+                            p Dan Wellman, Front-End Web Developer
+
+            .container
+                div.heading.single
+                    h2
+                        em.fa.fa-book
+                        span Новые уроки
+                    div.center
+                        p Гранит науки не устоит!
+
+                div.courses.layout-type-2.row
+                    div.col-md-3.col-sm-6
+                        article
+                            div.poster
+                                a(href='#')
+                                    img(src='/media/images/demo/courses/1.png')
+                                div.author
+                                    a(href='#author')
+                                        img(src='/media/images/demo/authors/1.jpg')
+                            div.details
+                                a.categorie(href='#') Web Design
+                                a.link(href='#') Scroll Events Made Easy
+                                p Craig Campbell - 23 Feb 2016
+
+                    div.col-md-3.col-sm-6
+                        article
+                            div.poster
+                                a(href='#')
+                                    img(src='/media/images/demo/courses/2.png')
+                                div.author
+                                    a(href='#author')
+                                        img(src='/media/images/demo/authors/2.jpg')
+                            div.details
+                                a.categorie(href='#') Web Design
+                                a.link(href='#') Scroll Events Made Easy
+                                p Craig Campbell - 23 Feb 2016
+
+                    div.col-md-3.col-sm-6
+                        article
+                            div.poster
+                                a(href='#')
+                                    img(src='/media/images/demo/courses/3.png')
+                                div.author
+                                    a(href='#author')
+                                        img(src='/media/images/demo/authors/3.jpg')
+                            div.details
+                                a.categorie(href='#') Web Design
+                                a.link(href='#') Scroll Events Made Easy
+                                p Craig Campbell - 23 Feb 2016
+
+                    div.col-md-3.col-sm-6
+                        article
+                            div.poster
+                                a(href='#')
+                                    img(src='/media/images/demo/courses/4.jpg')
+                                div.author
+                                    a(href='#author')
+                                        img(src='/media/images/demo/authors/4.png')
+                            div.details
+                                a.categorie(href='#') Web Design
+                                a.link(href='#') Scroll Events Made Easy
+                                p Craig Campbell - 23 Feb 2016
+
+                    div.col-md-3.col-sm-6
+                        article
+                            div.poster
+                                a(href='#')
+                                    img(src='/media/images/demo/courses/1.png')
+                                div.author
+                                    a(href='#author')
+                                        img(src='/media/images/demo/authors/1.jpg')
+                            div.details
+                                a.categorie(href='#') Web Design
+                                a.link(href='#') Scroll Events Made Easy
+                                p Craig Campbell - 23 Feb 2016
+
+                    div.col-md-3.col-sm-6
+                        article
+                            div.poster
+                                a(href='#')
+                                    img(src='/media/images/demo/courses/2.png')
+                                div.author
+                                    a(href='#author')
+                                        img(src='/media/images/demo/authors/2.jpg')
+                            div.details
+                                a.categorie(href='#') Web Design
+                                a.link(href='#') Scroll Events Made Easy
+                                p Craig Campbell - 23 Feb 2016
+
+                    div.col-md-3.col-sm-6
+                        article
+                            div.poster
+                                a(href='#')
+                                    img(src='/media/images/demo/courses/3.png')
+                                div.author
+                                    a(href='#author')
+                                        img(src='/media/images/demo/authors/3.jpg')
+                            div.details
+                                a.categorie(href='#') Web Design
+                                a.link(href='#') Scroll Events Made Easy
+                                p Craig Campbell - 23 Feb 2016
+
+                    div.col-md-3.col-sm-6
+                        article
+                            div.poster
+                                a(href='#')
+                                    img(src='/media/images/demo/courses/4.jpg')
+                                div.author
+                                    a(href='#author')
+                                        img(src='/media/images/demo/authors/4.png')
+                            div.details
+                                a.categorie(href='#') Web Design
+                                a.link(href='#') Scroll Events Made Easy
+                                p Craig Campbell - 23 Feb 2016
+
+            .container
+                div.heading.single
+                    h2
+                        em.fa.fa-graduation-cap
+                        span Лучшие авторы
+                    div.center
+                        p Наш звёздный отряд!
+
+                div.authors.row
+                    div.col-md-4.col-sm-6
+                        article
+                            div.poster
+                                a(href='#')
+                                    img(src='/media/images/demo/authors/0.jpg')
+                            div.details
+                                a.name(href='#') Abraham Tugalov [Priler]
+                                .status.jedi Jedi
+                                a.profession(href='#') Дизайн сайтов
+                                p.about Тестовый текст ...
+                    div.col-md-4.col-sm-6
+                        article
+                            div.poster
+                                a(href='#')
+                                    img(src='/media/images/demo/authors/1.jpg')
+                            div.details
+                                a.name(href='#') Jeremy Soul [jeyso]
+                                .status.jedi Jedi
+                                a.profession(href='#') Дизайн сайтов
+                                p.about Тестовый текст ...
+                    div.col-md-4.col-sm-6
+                        article
+                            div.poster
+                                a(href='#')
+                                    img(src='/media/images/demo/authors/2.jpg')
+                            div.details
+                                a.name(href='#') Andrew Stark [ironman]
+                                .status.jedi Jedi
+                                a.profession(href='#') Бизнес
+                                p.about Тестовый текст ...
+                    div.col-md-4.col-sm-6
+                        article
+                            div.poster
+                                a(href='#')
+                                    img(src='/media/images/demo/authors/3.jpg')
+                            div.details
+                                a.name(href='#') Mark Owen [twen]
+                                .status.jedi Jedi
+                                a.profession(href='#') Предпринимательство
+                                p.about Тестовый текст ...
+                    div.col-md-4.col-sm-6
+                        article
+                            div.poster
+                                a(href='#')
+                                    img(src='/media/images/demo/authors/4.png')
+                            div.details
+                                a.name(href='#') Anna Nomac [feldew]
+                                .status.jedi Jedi
+                                a.profession(href='#') Маркетинг
+                                p.about Тестовый текст ...
+                    div.col-md-4.col-sm-6
+                        article
+                            div.poster
+                                a(href='#')
+                                    img(src='/media/images/demo/authors/5.jpg')
+                            div.details
+                                a.name(href='#') Jason Havok [havok]
+                                .status.jedi Jedi
+                                a.profession(href='#') Разработка игр
+                                p.about Тестовый текст ...
+
+            div.colored-block.special-colored-block
+                .container
+                    div.heading.alternate
+                        a.chevroned(href='#') Смотреть все
+                        h5 Попробуйте наши
+                            strong  бесплатные курсы
+
+                    div.courses.layout-type-3.row
+                        div.col-md-4.col-sm-12
+                            a(href='#')
+                                article
+                                    div.poster
+                                        img(src='/media/images/demo/f1.png')
+                                    span.title  RAW Photo Processing With RawTherapee
+                                    span.info 10 lessons, 0.9 hours
+
+                        div.col-md-4.col-sm-6
+                            a(href='#')
+                                article
+                                    div.poster
+                                        img(src='/media/images/demo/f2.png')
+                                    span.title  RAW Photo Processing With RawTherapee
+                                    span.info 10 lessons, 0.9 hours
+
+                        div.col-md-4.col-sm-6
+                            a(href='#')
+                                article
+                                    div.poster
+                                        img(src='/media/images/demo/f3.png')
+                                    span.title  RAW Photo Processing With RawTherapee
+                                    span.info 10 lessons, 0.9 hours
+
+        include ./includes/footer.jade

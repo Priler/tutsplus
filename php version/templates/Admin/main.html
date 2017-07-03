@@ -1,0 +1,46 @@
+{% extends "admin_base.html" %}
+
+{% block title %}Администрирование{% endblock %}
+
+{% block head %}
+  {{ parent() }}
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <h2>Добро пожаловать, {{apps.users.active.title}}.</h2>
+    <h3>Статистика</h3>
+    <hr>
+    <div class="statistics">
+
+      <div class="row">
+        <div class="col-md-4">
+          <a href="/admin/users"><div class="item">
+            <div class="poster blue">
+              <img src="/media/images/design-time/admin/1.jpg" alt="">
+            </div>
+            <span>Участников всего: {{apps.admin.users.total}}</span>
+          </div></a>
+        </div>
+        <div class="col-md-4">
+          <a href="/admin/users/learners"><div class="item">
+            <div class="poster green">
+              <img src="/media/images/design-time/admin/2.jpg" alt="">
+            </div>
+            <span>Учеников всего: {{apps.admin.users.learners}}</span>
+          </div></a>
+        </div>
+        <div class="col-md-4">
+          <a href="/admin/users/mentors"><div class="item">
+            <div class="poster red">
+              <img src="/media/images/design-time/admin/3.jpg" alt="">
+            </div>
+            <span>Менторов всего: {{apps.admin.users.mentors}}</span>
+          </div></a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+{% endblock %}

@@ -1,0 +1,193 @@
+doctype html
+html(lang="ru")
+
+  head
+    title="Tuts+"
+    = '\n'
+    // Bootstrap styles
+    link(href='/media/assets/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    link(href='/media/assets/bootstrap/css/bootstrap-theme.min.css', rel='stylesheet')
+    = '\n'
+    // Core styles
+    link(href='/media/css/style.css', rel='stylesheet')
+    = '\n'
+    // Font Awesome
+    link(href='/media/assets/font-awesome/css/font-awesome.min.css', rel='stylesheet')
+
+  body
+
+    #page-wrapper
+
+        include ./includes/head.jade
+
+        #content.full-width.author-page
+            .author-info
+                .background
+                .container
+                    .row
+                        .col-md-4
+                        .col-md-8
+                            .row.author-statistics
+                                .col-sm-6
+                                    h3 Кошелёк
+                                    strong.counter.lime-text
+                                        span 2 500
+                                        em.fa.fa-ruble
+                                .col-sm-3
+                                    h3 Сообщения
+                                    strong.counter
+                                        a.white-text.messages-counter(href='#')
+                                            span 53
+                                            em.fa.fa-envelope-o
+                                .col-sm-3
+                                    h3 Подписчики
+                                    strong.counter
+                                        em.fa.fa-youtube-play
+                                        span 212,109 
+
+            .author-tabbed-menu
+                .container
+                    .row
+                        .col-md-4
+                        .col-md-8
+                            ul
+                                li
+                                    a(href='#')
+                                        em.fa.fa-bullhorn
+                                        span Лента (100+)
+                                li
+                                    a(href='#')
+                                        em.fa.fa-newspaper-o
+                                        span Стена
+                                li.active
+                                    a(href='#')
+                                        em.fa.fa-comments-o
+                                        span Диалоги (+3)
+                                li
+                                    a(href='#')
+                                        em.fa.fa-usd
+                                        span Товары/Услуги (29)
+                                li
+                                    a(href='#')
+                                        em.fa.fa-cog
+                                        span Настройки
+
+            .author-page-content
+                .container
+                    .col-md-4
+                        div.block.author-bio.forced
+                            div.block-title
+                                img(src='/media/images/design-time/icons/pencil.svg')
+                                span(title='Профессия') Веб Дизайнер
+                                .rating(title='Рейтинг')
+                                    .stars
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                            div.block-content
+                                div.row
+                                    div.col-sm-4
+                                        img(src='/media/images/demo/authors/0.jpg')
+                                    div.col-sm-8
+                                        strong.name Abraham Tugalov 
+                                            .offline Offline
+                                        ul.info
+                                            li
+                                                strong Возраст:
+                                                span 20
+                                            li
+                                                strong Статус:
+                                                span Джедай
+                                            li
+                                                strong Спасибо:
+                                                span 13 937
+                                div.block-footer
+                                    .row
+                                        .col-md-6
+                                            a.btn.subscribe-btn(href='#')
+                                                em.fa.fa-youtube-play
+                                                span Подписаться
+                                        .col-md-6
+                                            p Новые материалы автора у Вас в ленте!
+                        div.block.special.no-padding
+                            div.block-content
+                                a.btn.blocky(href='#')
+                                    em.fa.fa-video-camera
+                                    span Организовать вебинар
+                                    em.fa.fa-plus.pull-right
+                        div.block.special.no-padding
+                            div.block-content
+                                a.btn.blocky(href='#')
+                                    em.fa.fa-play
+                                    span Опубликовать курс
+                                    em.fa.fa-plus.pull-right
+                        div.block.special.no-padding
+                            div.block-content
+                                a.btn.blocky(href='#')
+                                    em.fa.fa-sticky-note-o
+                                    span Добавить урок
+                                    em.fa.fa-plus.pull-right
+                        div.block.special.no-padding
+                            div.block-content
+                                a.btn.blocky(href='#')
+                                    em.fa.fa-book
+                                    span Загрузить книгу
+                                    em.fa.fa-plus.pull-right
+                        div.block.special.no-padding
+                            div.block-content
+                                a.btn.blocky(href='#')
+                                    em.fa.fa-flask
+                                    span Мои достижения (27)
+                                    em.fa.fa-chevron-right.pull-right
+                        div.block.special.no-padding
+                            div.block-content
+                                a.btn.blocky(href='#')
+                                    em.fa.fa-group
+                                    span Мои друзья/партнёры (137)
+                                    em.fa.fa-chevron-right.pull-right
+                        div.block.special.no-padding
+                            div.block-content
+                                a.btn.blocky(href='#')
+                                    em.fa.fa-commenting-o
+                                    span Отзывы обо мне (78)
+                                    em.fa.fa-chevron-right.pull-right
+                    .col-md-8#dialogs
+                        .row
+                                .col-md-5
+                                    #list
+                                        .item
+                                            .poster
+                                                img(src="/media/images/demo/authors/0.jpg")
+                                            .info
+                                                .name Абрахам Тугалов
+                                                .last-message Привет!
+                                            .meta
+                                                .time 10:33
+                                                .new-messages 3
+                                        .item
+                                            .poster
+                                                img(src="/media/images/demo/authors/1.jpg")
+                                            .info
+                                                .name Александр Соул
+                                                .last-message Ты сделал домашку, ил...
+                                            .meta
+                                                .time 11:00
+                                                .new-messages 2
+                                        .item
+                                            .poster
+                                                img(src="/media/images/demo/authors/2.jpg")
+                                            .info
+                                                .name Трутень "TNT" Башнев
+                                                .last-message Да, я занимаюсь эт...
+                                            .meta
+                                                .time 12:58
+                                                .new-messages 11
+                                .col-md-7
+                                    #chat
+                                        .dialog-not-selected
+                                            span Пожалуйста, выберите диалог.
+
+
+        include ./includes/footer.jade

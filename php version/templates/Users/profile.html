@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+
+{% block title %}{{profile.title}}{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+
+<div id="content" class="full-width author-page">
+  <div class="author-info">
+    <div class="background"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-8">
+          <div class="row author-statistics">
+            {% if profile.id == apps.users.active.id %}
+            <div class="col-sm-6">
+              <h3>Кошелёк</h3><strong class="counter lime-text"><span>{{profile.money}}</span><em class="fa fa-ruble"></em></strong>
+            </div>
+            <div class="col-sm-3">
+              <h3>Сообщения</h3><strong class="counter"><a href="#" class="white-text messages-counter"><span>53</span><em class="fa fa-envelope-o"></em></a></strong>
+            </div>
+            {% endif %}
+            <div class="col-sm-3">
+              <h3>Подписчики</h3><strong class="counter"><em class="fa fa-youtube-play"></em><span>212,109 </span></strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="author-tabbed-menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-8">
+          <ul>
+            <li><a href="#"><em class="fa fa-bullhorn"></em><span>Лента (100+)</span></a></li>
+            <li class="{% if app.view == 'profile'%}active{% endif %}"><a href="{{profile.profile_url}}"><em class="fa fa-newspaper-o"></em><span>Стена</span></a></li>
+            <li><a href="#"><em class="fa fa-comments-o"></em><span>Диалоги (+3)</span></a></li>
+            <li><a href="#"><em class="fa fa-usd"></em><span>Товары/Услуги (29)</span></a></li>
+            <li class="{% if app.view == 'settings'%}active{% endif %}"><a href="/users/settings"><em class="fa fa-cog"></em><span>Настройки</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="author-page-content">
+    <div class="container">
+      <div class="col-md-4">
+        <div class="block author-bio forced">
+          <div class="block-title"><img src="/media/images/design-time/icons/pencil.svg"><span title="Профессия">{{profile.profession}}</span>
+            <div title="Рейтинг" class="rating">
+              <div class="stars"><em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em></div>
+            </div>
+          </div>
+          <div class="block-content">
+            <div class="row">
+              <div class="col-sm-4"><img src="{{profile.avatar}}"></div>
+              <div class="col-sm-8"><strong class="name">{{profile.name}} 
+                  <div class="status {{profile.online_status}}">{{profile.online_status|capitalize}}</div></strong>
+                <ul class="info">
+                  <li><strong>Возраст:</strong><span>{{profile.age}}</span></li>
+                  <li><strong>Статус:</strong><span>Эксперт</span></li>
+                  <li><strong>Спасибо:</strong><span>{{profile.likes}}</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="block-footer">
+              <div class="row">
+                <div class="col-md-6"><a href="#" class="btn subscribe-btn"><em class="fa fa-youtube-play"></em><span>Подписаться</span></a></div>
+                <div class="col-md-6">
+                  <p>Новые материалы автора у Вас в ленте!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block special no-padding">
+          <div class="block-content"><a href="#" class="btn blocky"><em class="fa fa-video-camera"></em><span>Организовать вебинар</span><em class="fa fa-plus pull-right"></em></a></div>
+        </div>
+        <div class="block special no-padding">
+          <div class="block-content"><a href="#" class="btn blocky"><em class="fa fa-play"></em><span>Опубликовать курс</span><em class="fa fa-plus pull-right"></em></a></div>
+        </div>
+        <div class="block special no-padding">
+          <div class="block-content"><a href="#" class="btn blocky"><em class="fa fa-sticky-note-o"></em><span>Добавить урок</span><em class="fa fa-plus pull-right"></em></a></div>
+        </div>
+        <div class="block special no-padding">
+          <div class="block-content"><a href="#" class="btn blocky"><em class="fa fa-book"></em><span>Загрузить книгу</span><em class="fa fa-plus pull-right"></em></a></div>
+        </div>
+        <div class="block special no-padding">
+          <div class="block-content"><a href="#" class="btn blocky"><em class="fa fa-flask"></em><span>Мои достижения (27)</span><em class="fa fa-chevron-right pull-right"></em></a></div>
+        </div>
+        <div class="block special no-padding">
+          <div class="block-content"><a href="#" class="btn blocky"><em class="fa fa-group"></em><span>Мои друзья/партнёры (137)</span><em class="fa fa-chevron-right pull-right"></em></a></div>
+        </div>
+        <div class="block special no-padding">
+          <div class="block-content"><a href="#" class="btn blocky"><em class="fa fa-commenting-o"></em><span>Отзывы обо мне (78)</span><em class="fa fa-chevron-right pull-right"></em></a></div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        {% block profile_content %}
+        <div class="block special no-padding">
+          <div class="block-content">
+            <form id="post-status-form" action="#" method="POST" class="post-status">
+              <textarea placeholder="Что нового?" required=""></textarea>
+              <button type="button" data-smiles-container="#status-smiles-box" class="smiles-opener"><em class="fa fa-smile-o"></em></button>
+              <button type="submit"><em class="fa fa-pencil"></em><span>Отправить</span></button>
+              <div id="status-smiles-box" class="smiles-container"><img src="/media/images/design-time/smiles/1.svg" data-smile="=)"><img src="/media/images/design-time/smiles/2.svg" data-smile="=)"><img src="/media/images/design-time/smiles/3.svg" data-smile="=)"><img src="/media/images/design-time/smiles/4.svg" data-smile="=)"><img src="/media/images/design-time/smiles/5.svg" data-smile="=)"><img src="/media/images/design-time/smiles/6.svg" data-smile="=)"><img src="/media/images/design-time/smiles/7.svg" data-smile="=)"><img src="/media/images/design-time/smiles/8.svg" data-smile="=)"><img src="/media/images/design-time/smiles/9.svg" data-smile="=)"><img src="/media/images/design-time/smiles/10.svg" data-smile="=)"><img src="/media/images/design-time/smiles/11.svg" data-smile="=)"><img src="/media/images/design-time/smiles/12.svg" data-smile="=)"><img src="/media/images/design-time/smiles/13.svg" data-smile="=)"><img src="/media/images/design-time/smiles/14.svg" data-smile="=)"><img src="/media/images/design-time/smiles/15.svg" data-smile="=)"><img src="/media/images/design-time/smiles/16.svg" data-smile="=)"><img src="/media/images/design-time/smiles/17.svg" data-smile="=)"><img src="/media/images/design-time/smiles/18.svg" data-smile="=)"><img src="/media/images/design-time/smiles/19.svg" data-smile="=)"><img src="/media/images/design-time/smiles/20.svg" data-smile="=)"><img src="/media/images/design-time/smiles/21.svg" data-smile="=)"><img src="/media/images/design-time/smiles/22.svg" data-smile="=)"><img src="/media/images/design-time/smiles/23.svg" data-smile="=)"><img src="/media/images/design-time/smiles/24.svg" data-smile="=)"><img src="/media/images/design-time/smiles/25.svg" data-smile="=)"><img src="/media/images/design-time/smiles/26.svg" data-smile="=)"><img src="/media/images/design-time/smiles/27.svg" data-smile="=)"><img src="/media/images/design-time/smiles/28.svg" data-smile="=)"><img src="/media/images/design-time/smiles/29.svg" data-smile="=)"><img src="/media/images/design-time/smiles/30.svg" data-smile="=)"><img src="/media/images/design-time/smiles/31.svg" data-smile="=)"><img src="/media/images/design-time/smiles/32.svg" data-smile="=)"><img src="/media/images/design-time/smiles/33.svg" data-smile="=)"><img src="/media/images/design-time/smiles/34.svg" data-smile="=)"><img src="/media/images/design-time/smiles/35.svg" data-smile="=)"><img src="/media/images/design-time/smiles/36.svg" data-smile="=)"><img src="/media/images/design-time/smiles/37.svg" data-smile="=)"><img src="/media/images/design-time/smiles/38.svg" data-smile="=)"><img src="/media/images/design-time/smiles/39.svg" data-smile="=)"><img src="/media/images/design-time/smiles/40.svg" data-smile="=)"><img src="/media/images/design-time/smiles/41.svg" data-smile="=)"><img src="/media/images/design-time/smiles/42.svg" data-smile="=)"><img src="/media/images/design-time/smiles/43.svg" data-smile="=)"><img src="/media/images/design-time/smiles/44.svg" data-smile="=)"><img src="/media/images/design-time/smiles/45.svg" data-smile="=)"><img src="/media/images/design-time/smiles/46.svg" data-smile="=)"><img src="/media/images/design-time/smiles/47.svg" data-smile="=)"><img src="/media/images/design-time/smiles/48.svg" data-smile="=)"><img src="/media/images/design-time/smiles/49.svg" data-smile="=)"><img src="/media/images/design-time/smiles/50.svg" data-smile="=)"><img src="/media/images/design-time/smiles/51.svg" data-smile="=)"><img src="/media/images/design-time/smiles/52.svg" data-smile="=)"><img src="/media/images/design-time/smiles/53.svg" data-smile="=)"><img src="/media/images/design-time/smiles/54.svg" data-smile="=)"><img src="/media/images/design-time/smiles/55.svg" data-smile="=)"><img src="/media/images/design-time/smiles/56.svg" data-smile="=)"><img src="/media/images/design-time/smiles/57.svg" data-smile="=)"><img src="/media/images/design-time/smiles/58.svg" data-smile="=)"><img src="/media/images/design-time/smiles/59.svg" data-smile="=)"><img src="/media/images/design-time/smiles/60.svg" data-smile="=)"><img src="/media/images/design-time/smiles/61.svg" data-smile="=)"><img src="/media/images/design-time/smiles/62.svg" data-smile="=)"><img src="/media/images/design-time/smiles/63.svg" data-smile="=)"><img src="/media/images/design-time/smiles/64.svg" data-smile="=)"><img src="/media/images/design-time/smiles/65.svg" data-smile="=)"><img src="/media/images/design-time/smiles/66.svg" data-smile="=)"><img src="/media/images/design-time/smiles/67.svg" data-smile="=)"><img src="/media/images/design-time/smiles/68.svg" data-smile="=)"><img src="/media/images/design-time/smiles/69.svg" data-smile="=)"><img src="/media/images/design-time/smiles/70.svg" data-smile="=)"><img src="/media/images/design-time/smiles/71.svg" data-smile="=)"><img src="/media/images/design-time/smiles/72.svg" data-smile="=)"><img src="/media/images/design-time/smiles/73.svg" data-smile="=)"><img src="/media/images/design-time/smiles/74.svg" data-smile="=)"><img src="/media/images/design-time/smiles/75.svg" data-smile="=)"><img src="/media/images/design-time/smiles/76.svg" data-smile="=)"><img src="/media/images/design-time/smiles/77.svg" data-smile="=)"><img src="/media/images/design-time/smiles/78.svg" data-smile="=)"><img src="/media/images/design-time/smiles/79.svg" data-smile="=)"><img src="/media/images/design-time/smiles/80.svg" data-smile="=)"><img src="/media/images/design-time/smiles/81.svg" data-smile="=)"><img src="/media/images/design-time/smiles/82.svg" data-smile="=)"><img src="/media/images/design-time/smiles/83.svg" data-smile="=)"><img src="/media/images/design-time/smiles/84.svg" data-smile="=)"><img src="/media/images/design-time/smiles/85.svg" data-smile="=)"><img src="/media/images/design-time/smiles/86.svg" data-smile="=)"><img src="/media/images/design-time/smiles/87.svg" data-smile="=)"><img src="/media/images/design-time/smiles/88.svg" data-smile="=)"><img src="/media/images/design-time/smiles/89.svg" data-smile="=)"><img src="/media/images/design-time/smiles/90.svg" data-smile="=)"><img src="/media/images/design-time/smiles/91.svg" data-smile="=)"><img src="/media/images/design-time/smiles/92.svg" data-smile="=)"><img src="/media/images/design-time/smiles/93.svg" data-smile="=)"><img src="/media/images/design-time/smiles/94.svg" data-smile="=)"><img src="/media/images/design-time/smiles/95.svg" data-smile="=)"><img src="/media/images/design-time/smiles/96.svg" data-smile="=)"><img src="/media/images/design-time/smiles/97.svg" data-smile="=)"><img src="/media/images/design-time/smiles/98.svg" data-smile="=)"><img src="/media/images/design-time/smiles/99.svg" data-smile="=)"><img src="/media/images/design-time/smiles/100.svg" data-smile="=)"><img src="/media/images/design-time/smiles/101.svg" data-smile="=)"><img src="/media/images/design-time/smiles/102.svg" data-smile="=)"><img src="/media/images/design-time/smiles/103.svg" data-smile="=)"><img src="/media/images/design-time/smiles/104.svg" data-smile="=)"><img src="/media/images/design-time/smiles/105.svg" data-smile="=)"><img src="/media/images/design-time/smiles/106.svg" data-smile="=)">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="block status">
+          <div class="block-content post-style">Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании форм развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки существенных финансовых и административных условий. С другой стороны начало повседневной работы по формированию позиции способствует подготовки и реализации направлений прогрессивного развития.</div>
+          <div class="block-meta">
+            <div class="date"><em class="fa fa-clock-o"></em><span>Сегодня в 10:17</span></div>
+          </div>
+        </div>
+        <div class="block status">
+          <div class="block-content post-style">Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности играет важную роль в формировании существенных финансовых и административных условий.</div>
+          <div class="block-meta">
+            <div class="date"><em class="fa fa-clock-o"></em><span>Вчера в 17:18</span></div>
+          </div>
+        </div>
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

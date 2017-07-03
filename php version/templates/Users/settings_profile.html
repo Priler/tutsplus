@@ -1,0 +1,47 @@
+{% extends "profile.html" %}
+
+{% block title %}Настройки{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+
+{% block profile_content %}
+<div id="settings">
+  <div class="row">
+    <div class="col-sm-9">
+      <div id="general-tab">
+        <form role="form" action="{{app.self_url}}" method="POST" enctype="multipart/form-data">
+
+          {% if success %}
+            <div class="alert alert-success">{{success}}</div>
+          {% endif %}
+
+          {% if error %}
+            <div class="alert alert-danger">{{error}}</div>
+          {% endif %}
+
+          <div class="form-group">
+            <label>Сменить аватар</label>
+            <input type="file" name="avatar" required="">
+          </div>
+          <div style="text-align: right;" class="form-group submit-group">
+            <button type="submit" class="btn btn-save" name="process"><em class="fa fa-floppy-o"></em><span>Сохранить</span></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <ul id="settings-tabs">
+        <li><a href="/users/settings/general">Основные</a></li>
+        <li class="active"><a href="/users/settings/profile">Профиль</a></li>
+        <li><a href="/users/settings/password">Пароль</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+  {{ parent() }}
+{% endblock %}

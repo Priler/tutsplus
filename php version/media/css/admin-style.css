@@ -1,0 +1,185 @@
+body {
+  color: #3d4d65;
+  font-size: 15px; }
+
+body * {
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  outline: none; }
+
+a {
+  color: #118ad8; }
+  a:hover {
+    text-decoration: none; }
+
+#admin-header {
+  position: fixed;
+  background-color: #434B56;
+  width: 100%;
+  height: 50px;
+  z-index: 9999; }
+  #admin-header #logo {
+    position: fixed;
+    left: 30px;
+    top: 75px;
+    width: 100px;
+    opacity: 0.3; }
+  #admin-header #logo img {
+    width: 100%; }
+  #admin-header #menu {
+    z-index: 99999;
+    margin: 0;
+    padding: 0; }
+    #admin-header #menu li {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      z-index: 99999; }
+      #admin-header #menu li a {
+        height: 50px;
+        line-height: 50px;
+        padding: 15px 20px;
+        color: white;
+        font-weight: 400;
+        font-size: 16px; }
+        #admin-header #menu li a em.fa + span {
+          margin-left: 10px; }
+      #admin-header #menu li:hover {
+        background-color: rgba(255, 255, 255, 0.1); }
+      #admin-header #menu li:hover ul.dropdown {
+        display: block; }
+      #admin-header #menu li > ul.dropdown {
+        display: none;
+        background: white;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        width: 200px;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+        z-index: 99999; }
+        #admin-header #menu li > ul.dropdown li {
+          width: 100%;
+          display: block; }
+        #admin-header #menu li > ul.dropdown a {
+          display: block;
+          width: 100%;
+          color: #434B56;
+          padding: 0 20px; }
+          #admin-header #menu li > ul.dropdown a:hover {
+            background-color: rgba(67, 75, 86, 0.1); }
+
+#admin-content {
+  padding-top: 75px; }
+
+.statistics > .row {
+  margin-bottom: 25px; }
+
+.statistics .item {
+  position: relative;
+  background-color: #f7f7f7;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  height: 200px; }
+  .statistics .item:hover {
+    opacity: 0.9; }
+  .statistics .item .poster img {
+    width: 100%; }
+  .statistics .item .poster.blue::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(39, 39, 122, 0.7); }
+  .statistics .item .poster.green::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 102, 41, 0.7); }
+  .statistics .item .poster.red::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(109, 28, 28, 0.7); }
+  .statistics .item span {
+    color: white;
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 400; }
+
+.xcrud-overlay {
+  display: none !important; }
+
+.xcrud-ajax > h2 {
+  color: #3d4d65 !important;
+  margin-bottom: 15px !important;
+  padding-bottom: 15px !important; }
+
+.xcrud textarea {
+  padding: 15px !important;
+  width: 100% !important;
+  min-height: 200px !important; }
+
+.xcrud input[type="text"], .xcrud input[type="password"] {
+  padding: 15px !important;
+  width: 100% !important; }
+
+.btn > em.fa:first-child {
+  margin-right: 10px; }
+
+.form-errors {
+  color: #DE2B60;
+  margin-bottom: 15px; }
+
+.form-success {
+  color: #159A42;
+  margin-bottom: 15px; }
+
+.history_item {
+  display: block;
+  background: #eee;
+  margin-bottom: 10px; }
+
+.history_field, .history_before, .history_after {
+  padding: 5px 10px;
+  color: white; }
+
+.history_field {
+  border-radius: 3px 0 0 3px;
+  background-color: #2d57c4;
+  display: inline-block; }
+
+.history_before {
+  background-color: #9b984a;
+  display: inline-block; }
+
+.history_after {
+  border-radius: 0 3px 3px 0;
+  background-color: #159a42;
+  display: inline-block; }
+
+.fa-chevron-down {
+  margin-left: 5px;
+  font-size: 10px;
+}

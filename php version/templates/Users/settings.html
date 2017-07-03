@@ -1,0 +1,74 @@
+{% extends "profile.html" %}
+
+{% block title %}Настройки{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+
+{% block profile_content %}
+<div id="settings">
+  <div class="row">
+    <div class="col-sm-9">
+      <div id="general-tab">
+        <form role="form" action="{{app.self_url}}" method="POST">
+
+          {% if success %}
+            <div class="alert alert-success">{{success}}</div>
+          {% endif %}
+
+          {% if error %}
+            <div class="alert alert-danger">{{error}}</div>
+          {% endif %}
+
+          <div class="form-group">
+            <label>Имя</label>
+            <input type="text" name="name" value="{{form.name}}" required="">
+          </div>
+          <div class="form-group">
+            <label>Пол</label>
+            <select name="gender" required="">
+              <option {% if form.gender == 'male' %}selected{% endif %} value="male">Мужчина</option>
+              <option {% if form.gender == 'female' %}selected{% endif %} value="female">Женщина</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Возраст</label>
+            <input type="number" name="age" value="{{form.age}}" min="10" max="100" required="">
+          </div>
+          <div class="form-group">
+            <label>Город</label>
+            <input type="text" name="city" value="{{form.city}}" required="" maxlength="100">
+          </div>
+          <div class="form-group">
+            <label>Профессия</label>
+            <input type="text" name="profession" value="{{form.profession}}" required="" maxlength="15">
+          </div>
+          <div class="form-group">
+            <label>Ссылка на профиль</label>
+            <input type="text" name="profile_link" value="{{form.profile_link}}" placeholder="{{app.host}}/@ссылка на профиль">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" value="{{form.email}}" required="" disabled="">
+          </div>
+          <div style="text-align: right;" class="form-group submit-group">
+            <button type="submit" class="btn btn-save" name="process"><em class="fa fa-floppy-o"></em><span>Сохранить</span></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <ul id="settings-tabs">
+        <li class="active"><a href="/users/settings/general">Основные</a></li>
+        <li><a href="/users/settings/profile">Профиль</a></li>
+        <li><a href="/users/settings/password">Пароль</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+  {{ parent() }}
+{% endblock %}

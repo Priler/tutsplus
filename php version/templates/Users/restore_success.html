@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Восстановление пароля{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+  <form action="#" method="POST" id="login-form">
+    <div class="logo">
+      <img src="/media/images/logo.png">
+    </div>
+    <div class="title">
+      Восстановление пароля
+    </div>
+    <div class="form">
+
+      <div class="form-success">
+        Поздравляем!<br/>
+        Ваш новый пароль: {{ new_password|raw }}<br/>
+        Теперь Вы можете авторизоваться.
+      </div>
+      <div class="form-errors"></div>
+
+    </div>
+    <div class="links">
+      <a href="/users/login/form">Авторизоваться</a>
+    </div>
+  </div>
+
+{% endblock %}

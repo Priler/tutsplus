@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>CodeStudio++</title>
+
+    <!-- Bootstrap styles-->
+    <link href="media/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="media/assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Core styles-->
+    <link href="media/css/style.css" rel="stylesheet">
+
+    <!-- Font Awesome-->
+    <link href="media/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Form Styler-->
+    <link href="media/assets/form-styler/jquery.formstyler.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <!-- includes/head.jade-->
+      <header id="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3"><a id="logo" href="#"><img src="media/images/logo.png"></a></div>
+            <div class="col-md-9">
+              <div id="top-nav" class="pull-right">
+                <ul>
+                  <li class="special-1"><a href="#" title="Войти по Email">Авторизация</a></li>
+                  <li class="divider">или</li>
+                  <li>
+                    <div class="social-links"><a href="#" title="Войти через Вконтакте" class="vk"><em class="fa fa-vk"></em></a><a href="#" title="Войти через Фейсбук" class="facebook"><em class="fa fa-facebook"></em></a><a href="#" title="Войти через Твиттер" class="twitter"><em class="fa fa-twitter"></em></a></div>
+                  </li>
+                  <li class="special-2"><a href="#" title="Регистрация по Email"><em class="fa fa-key"></em><span>Регистрация</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row level-2">
+            <div class="col-md-9">
+              <div id="main-nav">
+                <ul>
+                  <li><a href="#">Уроки<em class="fa fa-chevron-down"></em></a>
+                    <ul class="expended">
+                      <li class="hover"><a href="#">Дизайн<em class="fa fa-chevron-right"></em></a>
+                        <div class="topics">
+                          <ul>
+                            <li><a href="#">Векторы</a></li>
+                            <li><a href="#">Adobe Photoshop</a></li>
+                            <li><a href="#">Adobe Illustrator</a></li>
+                            <li><a href="#">Иллюстрации</a></li>
+                            <li><a href="#">Советы</a></li>
+                            <li><a href="#">Вдохновление</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Рисование</a></li>
+                            <li><a href="#">Эффекты Текста</a></li>
+                            <li><a href="#">Материал</a></li>
+                          </ul><a href="#">Смотреть все уроки ...</a>
+                        </div>
+                      </li>
+                      <li><a href="#">Кодинг<em class="fa fa-chevron-right"></em></a>
+                        <div class="topics teal">
+                          <ul>
+                            <li><a href="#">Веб Разработка</a></li>
+                            <li><a href="#">WordPress</a></li>
+                            <li><a href="#">Моб. Приложения</a></li>
+                            <li><a href="#">PHP</a></li>
+                            <li><a href="#">Flash</a></li>
+                            <li><a href="#">Java Script</a></li>
+                            <li><a href="#">CMS</a></li>
+                            <li><a href="#">iOS SDK</a></li>
+                            <li><a href="#">Android SDK</a></li>
+                            <li><a href="#">Новости</a></li>
+                          </ul><a href="#">Смотреть все уроки ...</a>
+                        </div>
+                      </li>
+                      <li><a href="#">Веб Дизайн<em class="fa fa-chevron-right"></em></a>
+                        <div class="topics teal-green">
+                          <ul>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">HTML & CSS</a></li>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">Adobe Photoshop</a></li>
+                            <li><a href="#">Готовые Вебсайты</a></li>
+                            <li><a href="#">UI Дизайн</a></li>
+                            <li><a href="#">Советы</a></li>
+                            <li><a href="#">Теория Дизайна</a></li>
+                            <li><a href="#">Общее</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                          </ul><a href="#">Смотреть все уроки ...</a>
+                        </div>
+                      </li>
+                      <li><a href="#">Фото и Видео<em class="fa fa-chevron-right"></em></a>
+                        <div class="topics purple">
+                          <ul>
+                            <li><a href="#">Съемка</a></li>
+                            <li><a href="#">Обработка</a></li>
+                            <li><a href="#">Обзоры</a></li>
+                            <li><a href="#">Adobe Photoshop</a></li>
+                            <li><a href="#">Как сделать</a></li>
+                            <li><a href="#">Свет</a></li>
+                            <li><a href="#">Вдохновление</a></li>
+                            <li><a href="#">Adobe Lightroom</a></li>
+                            <li><a href="#">Фотография</a></li>
+                            <li><a href="#">Видео</a></li>
+                          </ul><a href="#">Смотреть все уроки ...</a>
+                        </div>
+                      </li>
+                      <li><a href="#">Музыка и Аудио<em class="fa fa-chevron-right"></em></a>
+                        <div class="topics sea">
+                          <ul>
+                            <li><a href="#">Запись</a></li>
+                            <li><a href="#">Общее</a></li>
+                            <li><a href="#">Logic Pro</a></li>
+                            <li><a href="#">Советы</a></li>
+                            <li><a href="#">Мастеринг</a></li>
+                            <li><a href="#">Open Mic</a></li>
+                            <li><a href="#">Дизайн Звука</a></li>
+                            <li><a href="#">Ableton Live</a></li>
+                            <li><a href="#">Обзоры</a></li>
+                            <li><a href="#">Новости</a></li>
+                          </ul><a href="#">Смотреть все уроки ...</a>
+                        </div>
+                      </li>
+                      <li><a href="#">3D и Моушн Дизайн<em class="fa fa-chevron-right"></em></a>
+                        <div class="topics tomato">
+                          <ul>
+                            <li><a href="#">Adobe After Effects</a></li>
+                            <li><a href="#">3D</a></li>
+                            <li><a href="#">Моушн Дизайн</a></li>
+                            <li><a href="#">3D Studio Max</a></li>
+                            <li><a href="#">Maya</a></li>
+                            <li><a href="#">Cinema 4D</a></li>
+                            <li><a href="#">Советы</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Эффекты</a></li>
+                            <li><a href="#">Футажи</a></li>
+                          </ul><a href="#">Смотреть все уроки ...</a>
+                        </div>
+                      </li>
+                      <li><a href="#">Разработка Игр<em class="fa fa-chevron-right"></em></a>
+                        <div class="topics green">
+                          <ul>
+                            <li><a href="#">Гейм Дизайн</a></li>
+                            <li><a href="#">Кодинг</a></li>
+                            <li><a href="#">Платформы</a></li>
+                            <li><a href="#">Маркетинг</a></li>
+                            <li><a href="#">Flash</a></li>
+                            <li><a href="#">С нуля</a></li>
+                            <li><a href="#">HTML 5</a></li>
+                            <li><a href="#">Construct 2</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Советы</a></li>
+                          </ul><a href="#">Смотреть все уроки ...</a>
+                        </div>
+                      </li>
+                      <li><a href="#">Компьютер<em class="fa fa-chevron-right"></em></a>
+                        <div class="topics blue">
+                          <ul>
+                            <li><a href="#">OS X</a></li>
+                            <li><a href="#">Тренинги</a></li>
+                            <li><a href="#">Продуктивность</a></li>
+                            <li><a href="#">Советы</a></li>
+                            <li><a href="#">Электроника</a></li>
+                            <li><a href="#">Автоматизация</a></li>
+                            <li><a href="#">Защита</a></li>
+                            <li><a href="#">Офис</a></li>
+                            <li><a href="#">Железо</a></li>
+                            <li><a href="#">Mac</a></li>
+                          </ul><a href="#">Смотреть все уроки ...</a>
+                        </div>
+                      </li>
+                      <li><a href="#">Бизнес<em class="fa fa-chevron-right"></em></a>
+                        <div class="topics orange">
+                          <ul>
+                            <li><a href="#">Фриланс</a></li>
+                            <li><a href="#">Маркетинг</a></li>
+                            <li><a href="#">Планирование</a></li>
+                            <li><a href="#">Финансы</a></li>
+                            <li><a href="#">Коммуникация</a></li>
+                            <li><a href="#">Продажи</a></li>
+                            <li><a href="#">SEO</a></li>
+                            <li><a href="#">Карьерный Рост</a></li>
+                            <li><a href="#">Продуктивность</a></li>
+                            <li><a href="#">Советы</a></li>
+                          </ul><a href="#">Смотреть все уроки ...</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Курсы<em class="fa fa-chevron-down"></em></a>
+                    <ul>
+                      <li><a href="#">Дизайн</a></li>
+                      <li><a href="#">Кодинг</a></li>
+                      <li><a href="#">Веб дизайн</a></li>
+                      <li><a href="#">Фото и Видео</a></li>
+                      <li><a href="#">Музыка и Аудио</a></li>
+                      <li><a href="#">3D & Моушн Графика</a></li>
+                      <li><a href="#">Разработка игр</a></li>
+                      <li><a href="#">Компьютер</a></li>
+                      <li><a href="#">Бизнес</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Вебинары</a></li>
+                  <li><a id="mobile-search" href="#"><em class="fa fa-search"></em></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div id="top-search" class="pull-right">
+                <form action="#" method="GET">
+                  <button type="submit"><em class="fa fa-search"></em></button>
+                  <input type="text" name="s" placeholder="Поиск ...">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="content" class="full-width author-page">
+        <div class="author-info">
+          <div class="background"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4"></div>
+              <div class="col-md-8">
+                <div class="row author-statistics">
+                  <div class="col-sm-6">
+                    <h3>Кошелёк</h3><strong class="counter lime-text"><span>2 500</span><em class="fa fa-ruble"></em></strong>
+                  </div>
+                  <div class="col-sm-3">
+                    <h3>Сообщения</h3><strong class="counter"><a href="#" class="white-text messages-counter"><span>53</span><em class="fa fa-envelope-o"></em></a></strong>
+                  </div>
+                  <div class="col-sm-3">
+                    <h3>Подписчики</h3><strong class="counter"><em class="fa fa-youtube-play"></em><span>212,109 </span></strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="author-tabbed-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4"></div>
+              <div class="col-md-8">
+                <ul>
+                  <li><a href="#"><em class="fa fa-bullhorn"></em><span>Лента (100+)</span></a></li>
+                  <li class="active"><a href="#"><em class="fa fa-newspaper-o"></em><span>Стена</span></a></li>
+                  <li><a href="#"><em class="fa fa-comments-o"></em><span>Диалоги (+3)</span></a></li>
+                  <li><a href="#"><em class="fa fa-usd"></em><span>Товары/Услуги (29)</span></a></li>
+                  <li><a href="#"><em class="fa fa-cog"></em><span>Настройки</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="author-page-content">
+          <div class="container">
+            <div class="col-md-4">
+              <div class="block author-bio forced">
+                <div class="block-title"><img src="media/images/design-time/icons/pencil.svg"><span title="Профессия">Веб Дизайнер</span>
+                  <div title="Рейтинг" class="rating">
+                    <div class="stars"><em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em></div>
+                  </div>
+                </div>
+                <div class="block-content">
+                  <div class="row">
+                    <div class="col-sm-4"><img src="media/images/demo/authors/0.jpg"></div>
+                    <div class="col-sm-8"><strong class="name">Abraham Tugalov 
+                        <div class="offline">Offline</div></strong>
+                      <ul class="info">
+                        <li><strong>Возраст:</strong><span>20</span></li>
+                        <li><strong>Статус:</strong><span>Джедай</span></li>
+                        <li><strong>Спасибо:</strong><span>13 937</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="block-footer">
+                    <div class="row">
+                      <div class="col-md-6"><a href="#" class="btn subscribe-btn"><em class="fa fa-youtube-play"></em><span>Подписаться</span></a></div>
+                      <div class="col-md-6">
+                        <p>Новые материалы автора у Вас в ленте!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block special no-padding">
+                <div class="block-content"><a href="#" class="btn blocky"><em class="fa fa-video-camera"></em><span>Организовать вебинар</span><em class="fa fa-plus pull-right"></em></a></div>
+              </div>
+              <div class="block special no-padding">
+                <div class="block-content"><a href="#" class="btn blocky"><em class="fa fa-play"></em><span>Опубликовать курс</span><em class="fa fa-plus pull-right"></em></a></div>
+              </div>
+              <div class="block special no-padding">
+                <div class="block-content"><a href="#" class="btn blocky"><em class="fa fa-sticky-note-o"></em><span>Добавить урок</span><em class="fa fa-plus pull-right"></em></a></div>
+              </div>
+              <div class="block special no-padding">
+                <div class="block-content"><a href="#" class="btn blocky"><em class="fa fa-book"></em><span>Загрузить книгу</span><em class="fa fa-plus pull-right"></em></a></div>
+              </div>
+              <div class="block special no-padding">
+                <div class="block-content"><a href="#" class="btn blocky"><em class="fa fa-flask"></em><span>Мои достижения (27)</span><em class="fa fa-chevron-right pull-right"></em></a></div>
+              </div>
+              <div class="block special no-padding">
+                <div class="block-content"><a href="#" class="btn blocky"><em class="fa fa-group"></em><span>Мои друзья/партнёры (137)</span><em class="fa fa-chevron-right pull-right"></em></a></div>
+              </div>
+              <div class="block special no-padding">
+                <div class="block-content"><a href="#" class="btn blocky"><em class="fa fa-commenting-o"></em><span>Отзывы обо мне (78)</span><em class="fa fa-chevron-right pull-right"></em></a></div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="block special no-padding">
+                <div class="block-content">
+                  <form id="post-status-form" action="#" method="POST" class="post-status">
+                    <textarea placeholder="Что нового?" required=""></textarea>
+                    <button type="button" data-smiles-container="#status-smiles-box" class="smiles-opener"><em class="fa fa-smile-o"></em></button>
+                    <button type="submit"><em class="fa fa-pencil"></em><span>Отправить</span></button>
+                    <div id="status-smiles-box" class="smiles-container"><img src="media/images/design-time/smiles/1.svg" data-smile="=)"><img src="media/images/design-time/smiles/2.svg" data-smile="=)"><img src="media/images/design-time/smiles/3.svg" data-smile="=)"><img src="media/images/design-time/smiles/4.svg" data-smile="=)"><img src="media/images/design-time/smiles/5.svg" data-smile="=)"><img src="media/images/design-time/smiles/6.svg" data-smile="=)"><img src="media/images/design-time/smiles/7.svg" data-smile="=)"><img src="media/images/design-time/smiles/8.svg" data-smile="=)"><img src="media/images/design-time/smiles/9.svg" data-smile="=)"><img src="media/images/design-time/smiles/10.svg" data-smile="=)"><img src="media/images/design-time/smiles/11.svg" data-smile="=)"><img src="media/images/design-time/smiles/12.svg" data-smile="=)"><img src="media/images/design-time/smiles/13.svg" data-smile="=)"><img src="media/images/design-time/smiles/14.svg" data-smile="=)"><img src="media/images/design-time/smiles/15.svg" data-smile="=)"><img src="media/images/design-time/smiles/16.svg" data-smile="=)"><img src="media/images/design-time/smiles/17.svg" data-smile="=)"><img src="media/images/design-time/smiles/18.svg" data-smile="=)"><img src="media/images/design-time/smiles/19.svg" data-smile="=)"><img src="media/images/design-time/smiles/20.svg" data-smile="=)"><img src="media/images/design-time/smiles/21.svg" data-smile="=)"><img src="media/images/design-time/smiles/22.svg" data-smile="=)"><img src="media/images/design-time/smiles/23.svg" data-smile="=)"><img src="media/images/design-time/smiles/24.svg" data-smile="=)"><img src="media/images/design-time/smiles/25.svg" data-smile="=)"><img src="media/images/design-time/smiles/26.svg" data-smile="=)"><img src="media/images/design-time/smiles/27.svg" data-smile="=)"><img src="media/images/design-time/smiles/28.svg" data-smile="=)"><img src="media/images/design-time/smiles/29.svg" data-smile="=)"><img src="media/images/design-time/smiles/30.svg" data-smile="=)"><img src="media/images/design-time/smiles/31.svg" data-smile="=)"><img src="media/images/design-time/smiles/32.svg" data-smile="=)"><img src="media/images/design-time/smiles/33.svg" data-smile="=)"><img src="media/images/design-time/smiles/34.svg" data-smile="=)"><img src="media/images/design-time/smiles/35.svg" data-smile="=)"><img src="media/images/design-time/smiles/36.svg" data-smile="=)"><img src="media/images/design-time/smiles/37.svg" data-smile="=)"><img src="media/images/design-time/smiles/38.svg" data-smile="=)"><img src="media/images/design-time/smiles/39.svg" data-smile="=)"><img src="media/images/design-time/smiles/40.svg" data-smile="=)"><img src="media/images/design-time/smiles/41.svg" data-smile="=)"><img src="media/images/design-time/smiles/42.svg" data-smile="=)"><img src="media/images/design-time/smiles/43.svg" data-smile="=)"><img src="media/images/design-time/smiles/44.svg" data-smile="=)"><img src="media/images/design-time/smiles/45.svg" data-smile="=)"><img src="media/images/design-time/smiles/46.svg" data-smile="=)"><img src="media/images/design-time/smiles/47.svg" data-smile="=)"><img src="media/images/design-time/smiles/48.svg" data-smile="=)"><img src="media/images/design-time/smiles/49.svg" data-smile="=)"><img src="media/images/design-time/smiles/50.svg" data-smile="=)"><img src="media/images/design-time/smiles/51.svg" data-smile="=)"><img src="media/images/design-time/smiles/52.svg" data-smile="=)"><img src="media/images/design-time/smiles/53.svg" data-smile="=)"><img src="media/images/design-time/smiles/54.svg" data-smile="=)"><img src="media/images/design-time/smiles/55.svg" data-smile="=)"><img src="media/images/design-time/smiles/56.svg" data-smile="=)"><img src="media/images/design-time/smiles/57.svg" data-smile="=)"><img src="media/images/design-time/smiles/58.svg" data-smile="=)"><img src="media/images/design-time/smiles/59.svg" data-smile="=)"><img src="media/images/design-time/smiles/60.svg" data-smile="=)"><img src="media/images/design-time/smiles/61.svg" data-smile="=)"><img src="media/images/design-time/smiles/62.svg" data-smile="=)"><img src="media/images/design-time/smiles/63.svg" data-smile="=)"><img src="media/images/design-time/smiles/64.svg" data-smile="=)"><img src="media/images/design-time/smiles/65.svg" data-smile="=)"><img src="media/images/design-time/smiles/66.svg" data-smile="=)"><img src="media/images/design-time/smiles/67.svg" data-smile="=)"><img src="media/images/design-time/smiles/68.svg" data-smile="=)"><img src="media/images/design-time/smiles/69.svg" data-smile="=)"><img src="media/images/design-time/smiles/70.svg" data-smile="=)"><img src="media/images/design-time/smiles/71.svg" data-smile="=)"><img src="media/images/design-time/smiles/72.svg" data-smile="=)"><img src="media/images/design-time/smiles/73.svg" data-smile="=)"><img src="media/images/design-time/smiles/74.svg" data-smile="=)"><img src="media/images/design-time/smiles/75.svg" data-smile="=)"><img src="media/images/design-time/smiles/76.svg" data-smile="=)"><img src="media/images/design-time/smiles/77.svg" data-smile="=)"><img src="media/images/design-time/smiles/78.svg" data-smile="=)"><img src="media/images/design-time/smiles/79.svg" data-smile="=)"><img src="media/images/design-time/smiles/80.svg" data-smile="=)"><img src="media/images/design-time/smiles/81.svg" data-smile="=)"><img src="media/images/design-time/smiles/82.svg" data-smile="=)"><img src="media/images/design-time/smiles/83.svg" data-smile="=)"><img src="media/images/design-time/smiles/84.svg" data-smile="=)"><img src="media/images/design-time/smiles/85.svg" data-smile="=)"><img src="media/images/design-time/smiles/86.svg" data-smile="=)"><img src="media/images/design-time/smiles/87.svg" data-smile="=)"><img src="media/images/design-time/smiles/88.svg" data-smile="=)"><img src="media/images/design-time/smiles/89.svg" data-smile="=)"><img src="media/images/design-time/smiles/90.svg" data-smile="=)"><img src="media/images/design-time/smiles/91.svg" data-smile="=)"><img src="media/images/design-time/smiles/92.svg" data-smile="=)"><img src="media/images/design-time/smiles/93.svg" data-smile="=)"><img src="media/images/design-time/smiles/94.svg" data-smile="=)"><img src="media/images/design-time/smiles/95.svg" data-smile="=)"><img src="media/images/design-time/smiles/96.svg" data-smile="=)"><img src="media/images/design-time/smiles/97.svg" data-smile="=)"><img src="media/images/design-time/smiles/98.svg" data-smile="=)"><img src="media/images/design-time/smiles/99.svg" data-smile="=)"><img src="media/images/design-time/smiles/100.svg" data-smile="=)"><img src="media/images/design-time/smiles/101.svg" data-smile="=)"><img src="media/images/design-time/smiles/102.svg" data-smile="=)"><img src="media/images/design-time/smiles/103.svg" data-smile="=)"><img src="media/images/design-time/smiles/104.svg" data-smile="=)"><img src="media/images/design-time/smiles/105.svg" data-smile="=)"><img src="media/images/design-time/smiles/106.svg" data-smile="=)">
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="block status">
+                <div class="block-content post-style">Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании форм развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки существенных финансовых и административных условий. С другой стороны начало повседневной работы по формированию позиции способствует подготовки и реализации направлений прогрессивного развития.</div>
+                <div class="block-meta">
+                  <div class="date"><em class="fa fa-clock-o"></em><span>Сегодня в 10:17</span></div>
+                </div>
+              </div>
+              <div class="block status">
+                <div class="block-content post-style">Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности играет важную роль в формировании существенных финансовых и административных условий.</div>
+                <div class="block-meta">
+                  <div class="date"><em class="fa fa-clock-o"></em><span>Вчера в 17:18</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- includes/footer.jade-->
+      <footer id="footer">
+        <div class="container">
+          <header>
+            <div id="statistics">
+              <div><strong>21,642</strong><span>Tutorials</span></div>
+              <div><strong>784</strong><span>Video Courses</span></div>
+            </div>
+            <div id="footer-logo"><img src="media/images/logo.png">
+              <p>Teaching skills to millions worldwide.</p>
+            </div>
+          </header>
+          <div id="widgets">
+            <div class="row">
+              <div class="col-md-3 col-xs-12">
+                <div class="widget">
+                  <div class="widget-title">Meet Envato</div>
+                  <div class="widget-content links-list"><a href="#">About Envato</a><a href="#">About Envato</a><a href="#">About Envato</a></div>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-12">
+                <div class="widget">
+                  <div class="widget-title">Join our Community</div>
+                  <div class="widget-content links-list"><a href="#">About Envato</a><a href="#">About Envato</a><a href="#">About Envato</a></div>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-12">
+                <div class="widget">
+                  <div class="widget-title">Help and Support</div>
+                  <div class="widget-content links-list"><a href="#">About Envato</a><a href="#">About Envato</a><a href="#">About Envato</a></div>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-12">
+                <div class="widget">
+                  <div class="widget-title">Email Newsletters</div>
+                  <div class="widget-content">
+                    <p>Get Envato CodeStudio++ updates, news, surveys & offers.</p>
+                    <form action="#" method="POST" class="mailchimp-form">
+                      <input type="text" placeholder="Email Address">
+                      <button type="submit">Subscribe</button><a href="#">Privacy Policy</a>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="copyright">
+          <div class="container">
+            <div id="socials">
+              <p>Follow Envato CodeStudio++</p>
+              <div class="social-links"><a href="#" class="facebook"><em class="fa fa-facebook"></em></a><a href="#" class="twitter"><em class="fa fa-twitter"></em></a><a href="#" class="google"><em class="fa fa-google-plus"></em></a><a href="#" class="pinterest"><em class="fa fa-pinterest"></em></a></div>
+            </div>
+            <p>© 2016 Envato Pty Ltd. Trademarks and brands are the property of their respective owners.</p>
+          </div>
+        </div>
+      </footer>
+      <div id="overlay"></div>
+      <div id="search-overlay"></div>
+      <div id="mobile-search-modal">
+        <div class="absolute-center">
+          <div id="form-holder">
+            <form action="#" method="POST">
+              <input type="text" placeholder="Поиск ..." name="s">
+              <button type="submit"><em class="fa fa-search"></em></button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Java Script, deffered-->
+      <script src="media/assets/jquery/jquery-1.12.3.min.js" defer></script>
+      <script src="media/assets/bootstrap/js/bootstrap.min.js" defer></script>
+      <script src="media/assets/velocity/velocity.min.js" defer></script>
+      <script src="media/assets/form-styler/jquery.formstyler.min.js" defer></script>
+      <script src="media/js/core.js" defer></script>
+    </div>
+  </body>
+</html>

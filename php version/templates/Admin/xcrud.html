@@ -1,0 +1,13 @@
+{% extends "admin_base.html" %}
+
+{% block title %}Администрирование{% endblock %}
+
+{% block head %}
+  {{ parent() }}
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    {{ xcrud|raw }}
+  </div>
+{% endblock %}

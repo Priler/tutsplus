@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Восстановление пароля{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+  <form action="#" method="POST" id="login-form">
+    <div class="logo">
+      <img src="/media/images/logo.png">
+    </div>
+    <div class="title">
+      Восстановление пароля
+    </div>
+    <div class="form">
+
+      <div class="form-success"></div>
+      <div class="form-errors">
+        Запрошенная операция восстановления не найдена в Базе Данных.<br/>
+        Возможно, Вы неправильно скопировали ссылку восстановления из письма.<br/>
+        Если же всё правильно, попробуйте снова запросить восстановление позже, либо свяжитесь с администрацией.<br/>
+      </div>
+
+    </div>
+    <div class="links">
+      <a href="/users/signup/form">Зарегистрироваться</a>
+      <a href="/users/login/form">Авторизоваться</a>
+    </div>
+  </div>
+
+{% endblock %}

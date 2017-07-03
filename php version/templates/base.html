@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block head %}
+
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <title>{% block title %}{% endblock %} - {{app.settings.project}}</title>
+
+            <meta name="description" content="{% block meta_description %}{% endblock %}">
+            <meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
+
+            <!-- Bootstrap styles-->
+            <link href="/media/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <link href="/media/assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+
+            <!-- Core styles-->
+            <link href="/media/css/style.css" rel="stylesheet">
+
+            <!-- Font Awesome-->
+            <link href="/media/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+        {% endblock %}
+    </head>
+    <body>
+
+        <!-- header -->
+        <header id="header">
+            {% include 'header.html' %}
+        </header><!-- / header -->
+
+        <!-- content -->
+        {% block content %}{% endblock %}<!-- / content -->
+
+        <!-- footer -->
+        <footer id="footer">
+            {% block footer %}
+                {% include 'footer.html' %}
+            {% endblock %}
+        </footer><!-- / footer -->
+        <div id="overlay"></div>
+        <div id="search-overlay"></div>
+        <div id="mobile-search-modal">
+        <div class="absolute-center">
+          <div id="form-holder">
+            <form action="#" method="POST">
+              <input type="text" placeholder="Поиск ..." name="s">
+              <button type="submit"><em class="fa fa-search"></em></button>
+            </form>
+          </div>
+        </div>
+        </div>
+
+        <!-- Java Script, deffered-->
+        <script src="/media/assets/jquery/jquery-1.12.3.min.js" defer></script>
+        <script src="/media/assets/bootstrap/js/bootstrap.min.js" defer></script>
+        <script src="/media/assets/velocity/velocity.min.js" defer></script>
+        <script src="/media/assets/form-styler/jquery.formstyler.min.js" defer></script>
+        <script src="/media/js/core.js" defer></script>
+    </body>
+</html>

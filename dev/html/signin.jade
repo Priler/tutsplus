@@ -1,0 +1,61 @@
+doctype html
+html(lang="ru")
+
+  head
+    title="Tuts+"
+    = '\n'
+    // Bootstrap styles
+    link(href='/media/assets/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    link(href='/media/assets/bootstrap/css/bootstrap-theme.min.css', rel='stylesheet')
+    = '\n'
+    // Core styles
+    link(href='/media/css/style.css', rel='stylesheet')
+    = '\n'
+    // Font Awesome
+    link(href='/media/assets/font-awesome/css/font-awesome.min.css', rel='stylesheet')
+    = '\n'
+    // Form Styler
+    link(href='/media/assets/form-styler/jquery.formstyler.css', rel='stylesheet')
+
+  body
+
+    #page-wrapper
+
+        include ./includes/head.jade
+        
+        #content.full-width.sign-in-page
+            .container
+                .row
+                    .col-md-6.col-md-offset-3
+                        .login-form
+                            .heading
+                                h1 Войти
+                                p Нет аккаунта? 
+                                    a(href='#') Создать
+
+                            form(action='#', method='POST')
+                                .form-group
+                                    label Ваш Email
+                                    input(type='text', class='form-control', placeholder='')
+                                .form-group
+                                    label Ваш пароль
+                                    input(type='password', class='form-control')
+                                .form-group.submit
+                                    button.btn.btn-primary(type='submit') Войти →
+
+                            .links
+                                a(href='#') Забыли пароль?
+
+                            .social-logins
+                                p Быстрый вход!
+                                a(href='#').btn.via-vk
+                                    em.fa.fa-vk
+                                    span Vkontakte
+                                a(href='#').btn.via-fb
+                                    em.fa.fa-facebook
+                                    span Facebook
+                                a(href='#').btn.via-tw
+                                    em.fa.fa-twitter
+                                    span Twitter
+
+        include ./includes/footer.jade
