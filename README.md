@@ -13,7 +13,7 @@
 Страница авторизации - https://priler.github.io/tutsplus/signin.html<br>
 Страница регистрации - https://priler.github.io/tutsplus/signup.html<br>
 
-# Можно-ли использовать, продавать и т.д.?
+# Можно ли использовать, продавать и т.д.?
 Да, отдаю бесплатно на основе лицензии MIT.
 
 ### Author
